@@ -1,0 +1,12 @@
+.button {
+  background-color: #472200;
+  transition: all 0.2s linear;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.button:active {
+  background-color: #472200;
+}

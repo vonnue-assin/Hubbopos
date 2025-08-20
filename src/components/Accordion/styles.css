@@ -1,0 +1,60 @@
+.image {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 4/3;
+}
+
+.accordion-item {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.accordion-container {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.heading {
+  color: #321800;
+  text-transform: capitalize;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.96px;
+  font-weight: 600;
+  font-family: 'font2';
+  text-align: start;
+}
+
+.paragraph {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+  color: #846b54;
+  font-family: 'font1';
+  font-weight: 500;
+  margin: 0;
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+
+.options::before {
+  content: url('../../assets/svg/check-mark.svg');
+  padding-top: 0.125rem;
+}
+
+.options-container {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  row-gap: 1.5rem;
+  column-gap: 2rem;
+  text-align: start;
+}
+
+.options {
+  text-transform: capitalize;
+  display: flex;
+  gap: 0.75rem;
+  font-family: 'font1';
+}

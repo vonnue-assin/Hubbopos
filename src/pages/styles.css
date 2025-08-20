@@ -1,0 +1,46 @@
+.text-heading {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.64px;
+  font-weight: 600;
+  font-family: 'font1';
+}
+
+.main-container {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.button {
+  background-color: #fff5db;
+  transition: all 0.2s linear;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: none;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.button-name {
+  font-size: 16px;
+  font-family: 'font1';
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-arrow-icon {
+  transition: transform 0.3s ease;
+}
+
+.button-arrow-icon.rotate {
+  transform: rotate(180deg);
+}
