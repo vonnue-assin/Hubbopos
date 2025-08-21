@@ -1,28 +1,14 @@
-import React, { ReactNode } from 'react';
-
-import './styles.css';
-
-type ButtonVariant = 'primary' | 'secondary';
+import React from 'react';
 
 type ButtonProps = {
-  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
-  type?: 'button' | 'submit';
+  onClick: () => void;
   className?: string;
-  variant?: ButtonVariant;
-  children: ReactNode;
+  children: React.ReactNode;
 };
 
-const Button: React.FC<ButtonProps> = ({
-  onClick,
-  type = 'button',
-  className = '',
-  variant = 'primary',
-  children,
-}) => {
-  const buttonClasses = `button ${variant}-button ${className}`;
-
+const Button: React.FC<ButtonProps> = ({ onClick, className, children }) => {
   return (
-    <button onClick={onClick} type={type} className={buttonClasses}>
+    <button onClick={onClick} className={className} type="button">
       {children}
     </button>
   );

@@ -1,0 +1,59 @@
+[
+  {
+    "id": "1",
+    "buttonLabel": "Intergration Partners",
+    "image": "https://assets.grab.com/wp-content/uploads/sites/42/2024/06/04110649/integration-partners-mobile.png",
+    "content": {
+      "heading": "Best-In-Class POS integrations",
+      "paragraph": "Our Powerful integrations allow you to manage your online deliveries,mobile payments,and accounting solutions seamlessly with one device.",
+      "Option1": "Online Food Delivery Integration-GrabFood,ShoppeFood,And FoodPanda.",
+      "Option2": "E-Wallet Payements Integration",
+      "Option3": "Accounting integration",
+      "link": "Learn More"
+    }
+  },
+  {
+    "id": "2",
+    "buttonLabel": "Omni-channel",
+    "image": "https://assets.grab.com/wp-content/uploads/sites/42/2024/06/04111548/omni-channel-small.png",
+    "content": {
+      "heading": "Streamline Your Online And Offline Orders",
+      "paragraph": "Experience smooth online and offline order management,seamless kitchen operations,and game-changing sales insights that will transform your bussiness.",
+      "Option1": "Omni-Channel order management",
+      "Option2": "Smart Number Calling System",
+      "Option3": "Efficient Kitchen Display System",
+      "Option4": "Omni-Channel Sales Insights",
+      "link": "Learn More"
+    }
+  },
+  {
+    "id": "3",
+
+    "buttonLabel": "Store Operations",
+    "image": "https://assets.grab.com/wp-content/uploads/sites/42/2024/06/04112030/store-operations-small.png",
+    "content": {
+      "heading": "Designed to simplify your restaurant operations",
+      "paragraph": "Transform your restaurant's daily operations with our suite of tools. Experience effortless staff management and advanced inventory management to minimise disruptions, and create a dining experience like no other.",
+      "Option1": "User-Friendly Interface",
+      "Option2": "Efficient Staff Management",
+      "Option3": "Auto-diagnosis",
+      "Option4": "Table Split, Merge ＆ Transfer",
+      "Option5": "Intuitive Floor Plan Editing",
+      "Option6": "Inventory management",
+      "link": "Learn More"
+    }
+  },
+  {
+    "id": "4",
+    "buttonLabel": "Customer Experience",
+    "image": "https://assets.grab.com/wp-content/uploads/sites/42/2024/06/04112558/customer-experience-small.png",
+    "content": {
+      "heading": "Curate dine-in experiences that will delight your customers",
+      "paragraph": "Deliver exceptional dining experiences to ensure customer satisfaction and loyalty.",
+      "Option1": "Contactless QR Ordering",
+      "Option2": "Engaging Loyalty Program",
+      "Option3": "Customize Discount Options",
+      "link": "Learn More"
+    }
+  }
+]
