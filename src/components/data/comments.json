@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "image": "https://assets.grab.com/wp-content/uploads/sites/42/2024/06/06072252/datuk.png",
+    "content": "The food delievery has automated our order management and menu changes,boosting our productivity by 30% and saving us 35% on manpower costs.This has improved our operations and overall customer experience.",
+    "quoteSvg": "https://hubbopos.com/_next/static/media/quote-icon.8714101b.svg",
+    "subheading": {
+      "name": "Mr.Datuk Seri Shamil",
+      "owner": "owner of Village Park",
+      "logo": "https://assets.grab.com/wp-content/uploads/sites/42/2024/06/04102607/store-logo-2.png"
+    }
+  },
+  {
+    "id": 2,
+    "image": "https://assets.grab.com/wp-content/uploads/sites/42/2024/06/06072750/nazri.png",
+    "quoteSvg": "https://hubbopos.com/_next/static/media/quote-icon.8714101b.svg",
+    "content": "I am impressed with the seamless POS system that Hubbo provided. It helped me grow my business and meet requirements. Hubbo’s customer service was outstanding and they were always quick to respond and assist me.",
+    "subheading": {
+      "name": "Mr. Nazri",
+      "owner": "Owner of Chicken Royale",
+      "logo": "https://assets.grab.com/wp-content/uploads/sites/42/2024/06/04102608/store-logo-3.png"
+    }
+  },
+  {
+    "id": 3,
+    "image": "https://assets.grab.com/wp-content/uploads/sites/42/2024/06/06072007/pasta-panas.png",
+    "quoteSvg": "https://hubbopos.com/_next/static/media/quote-icon.8714101b.svg",
+    "content": "HUBBO POS has helped my business in several ways. It enhanced our checkout process, made inventory management smooth, and allowed us to easily generate sales reports and understand customer behaviour. And, its integration with many delivery platforms has driven the overall customer experience.",
+    "subheading": {
+      "name": "Mr. Amiesh Remmy",
+      "owner": "Owner of Pasta Panas",
+      "logo": "https://assets.grab.com/wp-content/uploads/sites/42/2024/06/04102606/store-logo-1.png"
+    }
+  }
+]
