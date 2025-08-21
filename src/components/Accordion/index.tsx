@@ -9,9 +9,9 @@ const Accordion: React.FC<AccordionProps> = ({ data }) => {
     <div className="accordion-container">
       {data.map(item => (
         <div className="accordion-item" key={item.id}>
-          {item.image && (
+          {item.image1 && (
             <img
-              src={item.image}
+              src={item.image1}
               alt={item.content.heading}
               className="image"
             />
