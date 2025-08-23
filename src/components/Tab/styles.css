@@ -26,10 +26,10 @@
 .tab-headers {
   background-color: #fff5db;
   border-radius: 1rem;
-  padding: 8px 16px;
+
   display: flex;
   gap: 0.5rem;
-
+  padding: 0.5rem;
   justify-content: center;
   max-width: 100%;
 }
@@ -42,13 +42,18 @@
   font-weight: 500;
   color: #472200;
   font-family: 'font1';
-  padding: 0 1rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.1px;
   white-space: nowrap;
   transition: background-color 0.3s, color 0.3s;
   cursor: pointer;
+}
+
+.tab-header:hover {
+  background-color: #ffffff;
 }
 
 .tab-header.active {
@@ -134,17 +139,14 @@
   line-height: 28px;
   letter-spacing: -0.1px;
   display: flex;
-  align-items: flex-start;
+  flex-direction: row;
   gap: 0.75rem;
-  position: relative;
-  padding-left: 1.5rem;
+  font-weight: 500;
 }
 
 .tab-options::before {
   content: url('../../assets/svg/check-mark.svg');
-  position: absolute;
-  left: 0;
-  top: 0.25rem;
+  padding-top: 0.125rem;
 }
 
 .link-learn-more {
@@ -185,5 +187,15 @@
     grid-template-rows: repeat(3, minmax(0, auto));
     grid-auto-flow: column;
     grid-auto-columns: minmax(0, 1fr);
+    row-gap: 1.5rem;
+    column-gap: 2rem;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .image2 {
+    display: inline;
   }
 }
