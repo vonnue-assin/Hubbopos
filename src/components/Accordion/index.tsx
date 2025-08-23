@@ -19,26 +19,17 @@ const Accordion: React.FC<AccordionProps> = ({ data }) => {
 
           <h3 className="heading">{item.content.heading}</h3>
           <p className="paragraph">{item.content.paragraph}</p>
-          <ul className="options-container">
-            {item.content.Option1 && (
-              <li className="options">{item.content.Option1}</li>
-            )}
-            {item.content.Option2 && (
-              <li className="options">{item.content.Option2}</li>
-            )}
-            {item.content.Option3 && (
-              <li className="options">{item.content.Option3}</li>
-            )}
-            {item.content.Option4 && (
-              <li className="options">{item.content.Option4}</li>
-            )}
-            {item.content.Option5 && (
-              <li className="options">{item.content.Option5}</li>
-            )}
-            {item.content.Option6 && (
-              <li className="options">{item.content.Option6}</li>
-            )}
-          </ul>
+
+          {item.content.features?.length > 0 && (
+            <ul className="features-container">
+              {item.content.features.map((feature, index) => (
+                <li key={index} className="features">
+                  {feature}
+                </li>
+              ))}
+            </ul>
+          )}
+
           <span className="learn-more">{item.content.link}</span>
         </div>
       ))}
