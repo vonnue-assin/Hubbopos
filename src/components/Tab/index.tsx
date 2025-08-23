@@ -39,9 +39,14 @@ const Tabs: React.FC<TabsProps> = ({ tabsData }) => {
                 <div className="tab-pane-inner">
                   <div className="image-container">
                     <img
-                      src={tab.image2}
+                      src={tab.image1}
                       alt={tab.buttonLabel}
                       className="image"
+                    />
+                    <img
+                      src={tab.image2}
+                      alt={tab.buttonLabel}
+                      className="image2"
                     />
                   </div>
 

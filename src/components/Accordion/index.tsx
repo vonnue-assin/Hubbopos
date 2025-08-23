@@ -13,9 +13,10 @@ const Accordion: React.FC<AccordionProps> = ({ data }) => {
             <img
               src={item.image1}
               alt={item.content.heading}
-              className="image"
+              className="image1"
             />
           )}
+
           <h3 className="heading">{item.content.heading}</h3>
           <p className="paragraph">{item.content.paragraph}</p>
           <ul className="options-container">
@@ -38,7 +39,7 @@ const Accordion: React.FC<AccordionProps> = ({ data }) => {
               <li className="options">{item.content.Option6}</li>
             )}
           </ul>
-          <span className='learn-more'>{item.content.link}</span>
+          <span className="learn-more">{item.content.link}</span>
         </div>
       ))}
     </div>

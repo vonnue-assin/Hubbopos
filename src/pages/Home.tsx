@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import Button from '../components/Button';
+import React, { useEffect, useState } from 'react';
+
+import ArrowButton from '../assets/svg/dropDownArrow.svg';
 import Accordion from '../components/Accordion';
+import Button from '../components/Button';
 import Tabs from '../components/Tab';
 import accordionData from '../data/Accordion.json';
-import ArrowButton from '../assets/svg/dropDownArrow.svg';
 
 import './styles.css';
 
