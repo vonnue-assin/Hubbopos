@@ -24,17 +24,18 @@ const InfiniteScroll: React.FC<InfiniteScrolProps> = ({ data }) => {
   const prev = () => slideTo(index - 1);
   const next = () => slideTo(index + 1);
 
+  
   useEffect(() => {
     if (cardRef.current) {
       const { width } = cardRef.current.getBoundingClientRect();
       const cardMarginRight = parseFloat(
         window.getComputedStyle(cardRef.current).marginRight || '0',
       );
-
       setCardVisibleWidth(width + cardMarginRight);
     }
   }, []);
 
+  
   useEffect(() => {
     if (!wrapperRef.current || !cardVisibleWidth) return;
 
@@ -42,12 +43,12 @@ const InfiniteScroll: React.FC<InfiniteScrolProps> = ({ data }) => {
     wrapper.style.transition = transition
       ? 'transform 500ms ease-in-out'
       : 'none';
-
     wrapper.style.transform = `translate3d(${
       -index * cardVisibleWidth
     }px, 0, 0)`;
   }, [index, transition, cardVisibleWidth]);
 
+  // Handle infinite loop snapping
   useEffect(() => {
     if (index === 0) {
       setTimeout(() => {
@@ -64,46 +65,54 @@ const InfiniteScroll: React.FC<InfiniteScrolProps> = ({ data }) => {
 
   return (
     <div className="main-card">
-      <div className="image-card-wrapper">
-        <div className="swiper-wrapper" ref={wrapperRef}>
-          {extendedData.map((item, idx) => (
-            <div
-              key={`${item.id}-${idx}`}
-              className={`card-container ${
-                idx === index ? 'full-visible' : 'partial-visible'
-              }`}
-              ref={idx === 1 ? cardRef : null}
-            >
-              <div className="image-container">
-                <img src={item.quoteSvg} alt="Quote Icon" className="logo" />
-                <img src={item.image} alt="Client" className="clients-image" />
-              </div>
-              <div className="content-container">
-                <div className="content-card">
-                  <p className="comment">{item.content}</p>
-                </div>
-                <div className="owner-details-card">
+    
+      <div className="scroll-peek-wrapper">
+        <div className="image-card-wrapper">
+          <div className="swiper-wrapper" ref={wrapperRef}>
+            {extendedData.map((item, idx) => (
+              <div
+                key={`${item.id}-${idx}`}
+                className={`card-container ${
+                  idx === index ? 'full-visible' : 'partial-visible'
+                }`}
+                ref={idx === 1 ? cardRef : null}
+              >
+                <div className="image-container">
+                  <img src={item.quoteSvg} alt="Quote Icon" className="logo" />
                   <img
-                    src={item.subheading.logo}
-                    alt={`${item.subheading.name} Logo`}
-                    className="brand-image"
+                    src={item.image}
+                    alt="Client"
+                    className="clients-image"
                   />
-                  <div className="details-card">
-                    <p className="name">{item.subheading.name}</p>
-                    <p className="owner">{item.subheading.owner}</p>
+                </div>
+                <div className="content-container">
+                  <div className="content-card">
+                    <p className="comment">{item.content}</p>
+                  </div>
+                  <div className="owner-details-card">
+                    <img
+                      src={item.subheading.logo}
+                      alt={`${item.subheading.name} Logo`}
+                      className="brand-image"
+                    />
+                    <div className="details-card">
+                      <p className="name">{item.subheading.name}</p>
+                      <p className="owner">{item.subheading.owner}</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
 
+  
       <div className="arrow-button">
-        <Button  onClick={prev}>
+        <Button onClick={prev}>
           <LeftArrowIcon className="arrowIcon" />
         </Button>
-        <Button  onClick={next}>
+        <Button onClick={next}>
           <LeftArrowIcon className="arrowIcon rotateRight" />
         </Button>
       </div>
