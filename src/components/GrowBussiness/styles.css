@@ -91,7 +91,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 54%; */
+  width: 30%;
 }
 
 .grow-bussiness-container-main-footer {
@@ -102,6 +102,24 @@
 
 .language-box {
   display: flex;
+}
+
+@media screen and (min-width: 1024px) {
+  .rounded-component {
+    margin-top: 198px;
+    width: 860px;
+    height: 860px;
+  }
+
+  .posMachine {
+    height: 304px;
+    left: 531px;
+    bottom: 0;
+  }
+
+  .rounded-component-card-paragraph {
+    width: 535px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -124,5 +142,30 @@
     line-height: 28px;
     letter-spacing: -0.1px;
     font-weight: 500;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .grow-bussiness-container-main-footer {
+    padding: 300px;
+  }
+
+  .rounded-component {
+    margin-top: 198px;
+    width: 997px;
+    height: 999px;
+    margin-left: 100px;
+  }
+
+  .posMachine {
+    width: 506px;
+    height: 354px;
+    left: 730px;
+    bottom: -30px;
+  }
+
+  .grow-bussiness-container-main {
+    /* height: 44vh; */
+    background-position: 50%;
   }
 }

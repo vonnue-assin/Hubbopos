@@ -1,11 +1,23 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
+
+import { ReactComponent as ArrowDownWard } from '../../assets/svg/chevron-down-surface-primary.svg';
+import { ReactComponent as BrownArrowDownWard } from '../../assets/svg/dropDownArrow.svg';
+
 import './styles.css';
+
+type DropdownOption =
+  | string
+  | {
+      label: string;
+      image?: string;
+    };
 
 type DropdownProps = {
   label: string;
-  options: string[];
+  options: DropdownOption[];
   onSelect: (option: string) => void;
   className?: string;
+  isScrolled: boolean;
 };
 
 const Dropdown: React.FC<DropdownProps> = ({
@@ -13,16 +25,22 @@ const Dropdown: React.FC<DropdownProps> = ({
   options,
   onSelect,
   className = '',
+  isScrolled = false,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
-  const toggleDropdown = () => setIsOpen(!isOpen);
+  const toggleDropdown = useCallback(() => {
+    setIsOpen(prev => !prev);
+  }, []);
 
-  const handleOptionClick = (option: string) => {
-    onSelect(option);
-    setIsOpen(false);
-  };
+  const handleOptionClick = useCallback(
+    (option: string) => {
+      onSelect(option);
+      setIsOpen(false);
+    },
+    [onSelect],
+  );
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -38,25 +56,43 @@ const Dropdown: React.FC<DropdownProps> = ({
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
+  const arrowClass = isOpen ? 'arrow open' : 'arrow';
+
+  const renderOption = (option: DropdownOption, index: number) => {
+    const label = typeof option === 'string' ? option : option.label;
+    const image = typeof option === 'object' ? option.image : undefined;
+
+    return (
+      <li
+        key={index}
+        className={`dropdown-item ${image ? 'with-image' : ''}`}
+        onClick={() => handleOptionClick(label)}
+      >
+        {image && (
+          <img src={image} alt={label} className="dropdown-item-image" />
+        )}
+        {label}
+      </li>
+    );
+  };
+
   return (
     <div className={`dropdown-container ${className}`} ref={dropdownRef}>
-      <button className="dropdown-toggle" onClick={toggleDropdown}>
-        {label}
-        <span className={`arrow ${isOpen ? 'open' : ''}`}>&#9662;</span>
-      </button>
+      <div className="dropdown-container-sub">
+        <button className="dropdown-toggle" onClick={toggleDropdown}>
+          {label}
+          {isScrolled ? (
+            <BrownArrowDownWard className={arrowClass} />
+          ) : (
+            <ArrowDownWard className={arrowClass} />
+          )}
+        </button>
+      </div>
 
       {isOpen && (
-        <ul className="dropdown-menu">
-          {options.map((option, idx) => (
-            <li
-              key={idx}
-              className="dropdown-item"
-              onClick={() => handleOptionClick(option)}
-            >
-              {option}
-            </li>
-          ))}
-        </ul>
+        <div className="dropdown-menu-container">
+          <ul className="dropdown-menu">{options.map(renderOption)}</ul>
+        </div>
       )}
     </div>
   );

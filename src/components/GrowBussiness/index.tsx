@@ -17,7 +17,9 @@ const GrowBussiness = () => {
               Manage menu updates, in-store orders, and deliveries across all
               major delivery platforms with HUBBO POS.
             </p>
-            <Button className="FreeDemo">Request Free Demo</Button>
+            <Button className="FreeDemo" variant="primary">
+              Request Free Demo
+            </Button>
           </div>
           <img src={PosMachine} alt="posMachine" className="posMachine" />
         </div>
