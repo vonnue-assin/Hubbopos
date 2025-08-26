@@ -1,4 +1,5 @@
 import ImagesAnimation from '../ImagesAnimation';
+
 import './styles.css';
 
 const PoweringBusiness = () => {
