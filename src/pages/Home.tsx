@@ -1,7 +1,7 @@
-import React from 'react';
-
 import './styles.css';
+import LeadingSystems from '../components/LeadingSystems';
+import LeadingSystemsData from '../data/leadingSystems.json';
 
 export const Home = () => {
-  return <div></div>;
+  return <LeadingSystems />;
 };

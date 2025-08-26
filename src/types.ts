@@ -8,3 +8,10 @@ export type AccordtionItem = {
 export type AccordionProps = {
   data: AccordtionItem[];
 };
+
+export type LeadingSystemsDetails = {
+  id: number;
+  imageUrl?: string;
+  Heading: string;
+  description: string;
+};
