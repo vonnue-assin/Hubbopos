@@ -10,6 +10,7 @@ export type LeadingSystemsDetails = {
 type SystemDetailsProps = {
   systemsData: LeadingSystemsDetails[];
 };
+
 const SystemDetails: React.FC<SystemDetailsProps> = ({ systemsData }) => {
   return (
     <div className="systemDetails-container">
