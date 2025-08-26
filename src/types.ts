@@ -8,3 +8,8 @@ export type AccordtionItem = {
 export type AccordionProps = {
   data: AccordtionItem[];
 };
+
+export type AnimationProps = {
+  id: number;
+  imageUrl?: string;
+};
