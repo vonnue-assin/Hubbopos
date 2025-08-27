@@ -2,7 +2,6 @@
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem 1rem;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -12,7 +11,7 @@
 .tab-sub-container {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 4rem;
   width: 100%;
   box-sizing: border-box;
 }
@@ -26,9 +25,7 @@
 .tab-headers {
   background-color: #fff5db;
   border-radius: 1rem;
-
   display: flex;
-  gap: 0.5rem;
   padding: 0.5rem;
   justify-content: center;
   max-width: 100%;
@@ -84,7 +81,6 @@
   max-width: 100%;
   height: auto;
   display: block;
-  padding-top: 0px;
 }
 
 .options-main-container {
@@ -197,5 +193,9 @@
 
   .image2 {
     display: inline;
+  }
+
+  .tab-headers {
+    gap: 0.5rem;
   }
 }
