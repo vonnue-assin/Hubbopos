@@ -5,6 +5,15 @@
   width: 100%;
 }
 
+.gallery-item {
+  height: 50px;
+  padding: 0.5rem;
+}
+
+img {
+  height: 66px;
+}
+
 .marquee-track {
   display: flex;
   width: fit-content;
@@ -81,6 +90,6 @@
 
 @media screen and (min-width: 1440px) {
   .gallery-item {
-    height: 88px;
+    height: 64px;
   }
 }
