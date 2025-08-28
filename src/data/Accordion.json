@@ -6,9 +6,9 @@
     "image2": "https://assets.grab.com/wp-content/uploads/sites/42/2024/06/04110652/integration-partners.png",
     "content": {
       "heading": "Best-In-Class POS integrations",
-      "paragraph": "Our Powerful integrations allow you to manage your online deliveries, mobile payments, and accounting solutions seamlessly with one device.",
+      "paragraph": "Our powerful integrations allow you to manage your online deliveries, mobile payments, and accounting solutions seamlessly with one device.",
       "features": [
-        "Online Food Delivery Integration - GrabFood, ShopeeFood, and FoodPanda",
+        "Online Food Delivery Integration - GrabFood, ShoppeFood, and Foodpanda.",
         "E-Wallet Payments Integration",
         "Accounting Integration"
       ],
@@ -17,7 +17,7 @@
   },
   {
     "id": "2",
-    "buttonLabel": "Omni-channel",
+    "buttonLabel": "Omni-Channel",
     "image1": "https://assets.grab.com/wp-content/uploads/sites/42/2024/06/04111548/omni-channel-small.png",
     "image2": "https://assets.grab.com/wp-content/uploads/sites/42/2024/06/04111542/omni-channel-large.png",
     "content": {

@@ -138,6 +138,7 @@
     line-height: 52px;
     letter-spacing: -1.6px;
     margin: 0px;
+    font-weight: 600;
   }
 
   .main-container {
@@ -149,7 +150,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:4rem
+    gap: 3rem;
   }
   .container {
     border-radius: 1rem;
@@ -164,7 +165,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 6rem;
+    gap:4rem;
   }
+  
   .accordion-section-wrapper {
     display: flex;
     flex-direction: row;

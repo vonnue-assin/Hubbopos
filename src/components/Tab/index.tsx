@@ -63,7 +63,7 @@ const Tabs: React.FC<TabsProps> = ({ tabsData }) => {
                 </ul>
 
                 <a href={currentTab.content.link} className="link-learn-more">
-                  {currentTab.content.link}
+                  <p className='content-link'>{currentTab.content.link}</p>
                 </a>
               </div>
             </div>
