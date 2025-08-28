@@ -4,6 +4,7 @@ export type LeadingSystemsDetails = {
   id: string | number;
   imageUrl: string;
   Heading: string;
+  span: string;
   description: string;
 };
 
@@ -22,9 +23,12 @@ const SystemDetails: React.FC<SystemDetailsProps> = ({ systemsData }) => {
               alt={systems.Heading}
               className="image-card"
             />
-            <div className='text-container'>
-              <span className='text-heading'>{systems.Heading}</span>
-              <p className='text-description'>{systems.description}</p>
+            <div className="text-container">
+              <span className="text-heading">
+                {systems.Heading} <span>{systems.span}</span>
+              </span>
+
+              <p className="text-description">{systems.description}</p>
             </div>
           </div>
         ))}

@@ -1,11 +1,11 @@
 import React from 'react';
 
 import LeadingSystemsData from '../../data/leadingSystems.json';
+import SystemDetails from '../SystemDetails';
 
-import HubboposPos from '../../assets/images/HubboPosMain.png';
+import HubboposPosTabImage from '../../assets/images/HubboPosMaintab.png';
 
 import './styles.css';
-import SystemDetails from '../SystemDetails';
 
 const LeadingSystems = () => {
   return (
@@ -22,19 +22,20 @@ const LeadingSystems = () => {
           <div className="pos-card">
             <div className="content-card-main-box">
               <img
-                src={HubboposPos}
-                alt="Hubbopos(POS)"
+                src={HubboposPosTabImage}
+                alt="HubboposImage"
                 className="hubbopos-pos"
               />
-
-              <div className="contents">
-                <div className="content-card">
-                  <h2 className="leading-systems-heading-3">
-                    Leading POS system in Malaysia
-                  </h2>
-                  <h2 className="leading-systems-heading-4">
-                    One Platform, total control
-                  </h2>
+            </div>
+            <div className="contents">
+              <div className="content-card">
+                <h2 className="leading-systems-heading-3">
+                  Leading POS system in Malaysia
+                </h2>
+                <h2 className="leading-systems-heading-4">
+                  One Platform, total control
+                </h2>
+                <div className="content-cards">
                   <p className="hubbopos-content">
                     HUBBO POS is a point-of-sale (POS) system that gives total
                     control over your G＆B operations.
@@ -50,8 +51,8 @@ const LeadingSystems = () => {
             </div>
           </div>
         </div>
+        <SystemDetails systemsData={LeadingSystemsData} />
       </div>
-      <SystemDetails systemsData={LeadingSystemsData} />
     </div>
   );
 };
