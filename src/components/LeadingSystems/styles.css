@@ -275,7 +275,7 @@
   }
 }
 
-@media screen and (min-width: 2560px) {
+@media screen and (min-width: 1168px) {
   .content-card-main-box {
     display: flex;
     justify-content: center;
@@ -289,15 +289,13 @@
     padding-right: 6rem;
   }
 
-
-
   .leading-systems {
-    max-width: 1353px;
+    max-width: 1250px;
     margin-left: auto;
     margin-right: auto;
   }
 
   .hubbopos-content {
-    width: 575px;
+    width: 590px;
   }
 }

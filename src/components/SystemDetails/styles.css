@@ -93,7 +93,7 @@
   }
 }
 
-@media screen and (min-width: 2560px) {
+@media screen and (min-width: 1168px) {
   .single-card-systemdetails {
     flex: 1 1 0%;
   }
