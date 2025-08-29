@@ -7,7 +7,6 @@ export const FooterList = (rawData: NewRawJsonData): AccordionItem[] => {
       content: {
         heading: item.Heading,
         features: item.features,
-        link: `Learn more about ${item.Heading}`,
       },
     };
   });

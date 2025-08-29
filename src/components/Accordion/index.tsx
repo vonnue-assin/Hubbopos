@@ -1,37 +1,55 @@
-import React, { useState } from 'react';
-
+import React from 'react';
 import { AccordionProps } from '../../types';
+import ArrowIcon from '../../assets/svg/expandIcon.svg';
 
-const Accordion: React.FC<AccordionProps> = ({ data }) => {
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+import './styles.css';
 
-  const handleItemClick = (index: number) => {
-    setActiveIndex(index === activeIndex ? null : index);
-  };
-
+const Accordion: React.FC<AccordionProps> = ({ data, openIndex, onToggle }) => {
   return (
     <div className="accordion-container">
       {data.map((item, index) => (
-        <div className="accordion-item" key={item.id}>
-          <button
-            className={`accordion-header ${
-              index === activeIndex ? 'active' : ''
-            }`}
-            onClick={() => handleItemClick(index)}
-            aria-expanded={index === activeIndex}
-          >
-            <h3>{item.content}</h3>
-            <span>{index === activeIndex ? '-' : '+'}</span>
-          </button>
+        <div className="accordion-section-wrapper" key={item.id}>
           <div
-            className={`accordion-content ${
-              index === activeIndex ? 'open' : ''
+            onClick={() => onToggle(index)}
+            className={`accordion-header ${
+              openIndex === index ? 'active' : ''
             }`}
-            style={{ maxHeight: index === activeIndex ? '200px' : '0px' }}
           >
-            {item.image && <img src={item.image} alt={item.content} />}
-            <p>{item.content}</p>
+            <h3 className="heading">{item.content.heading}</h3>
+            <img
+              src={ArrowIcon}
+              alt="arrowButton"
+              className={`button-arrow-icon ${
+                openIndex === index ? 'rotate' : ''
+              }`}
+            />
           </div>
+
+          {openIndex === index && (
+            <div className="accordion-item">
+              {item.image1 && (
+                <img
+                  src={item.image1}
+                  alt={item.content.heading}
+                  className="image1"
+                />
+              )}
+
+              {item.content.paragraph && (
+                <p className="paragraph">{item.content.paragraph}</p>
+              )}
+
+              {item.content.features && item.content.features.length > 0 && (
+                <ul className="features-container">
+                  {item.content.features.map((feature, featureIndex) => (
+                    <li key={featureIndex} className="features">
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          )}
         </div>
       ))}
     </div>
