@@ -19,7 +19,7 @@
   line-height: 26px;
   letter-spacing: -0.72px;
   font-weight: 500;
-  font-family: 'font1';
+  font-family: 'font2';
 }
 
 .features {
@@ -31,13 +31,13 @@
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.1px;
-  font-family: 'font1';
+  font-family: 'font2';
 }
 
 .heading {
+  margin: 0px;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  margin: 0px;
 }
 
 .button-arrow-icon {
@@ -50,6 +50,11 @@
   justify-content: space-between;
   border-bottom: 1px solid #492a00;
   padding-bottom: 1rem;
+  padding-right: 12px;
+}
+
+.accordion-header.active {
+  border-bottom: none;
 }
 
 .accordion-section-wrapper {

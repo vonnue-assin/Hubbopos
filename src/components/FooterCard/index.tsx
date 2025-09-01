@@ -87,19 +87,22 @@ export const FooterCard = () => {
 
         <div className="footer-base-main-container">
           <div className="footer-base-sub-container">
-            <div className="logo-card">
-              <HubboposLogo className="hubboposLogo" />
-            </div>
-            <Button className="button-logo">
-              <div className="button-card">
-                <div className="button-card-container">
-                  <CountryLogo className="country-logo" />
-                  <p className="button-card-text">MY</p>
-                  <ArrowIcon />
-                </div>
+            <div className="footer-card">
+              <div className="logo-card">
+                <HubboposLogo className="hubboposLogo" />
               </div>
-            </Button>
+              <Button className="button-logo">
+                <div className="button-card">
+                  <div className="button-card-container">
+                    <CountryLogo className="country-logo" />
+                    <p className="button-card-text">MY</p>
+                    <ArrowIcon style={{ padding: '0.5rem' }} />
+                  </div>
+                </div>
+              </Button>
+            </div>
           </div>
+
           <div className="social-store-tabsize">
             <img
               src={faceBookIcon}

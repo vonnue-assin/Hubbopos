@@ -10,14 +10,6 @@
   gap: 1rem;
 }
 
-.footer-base-sub-container {
-  display: flex;
-  /* justify-content: space-between; */
-  align-items: center;
-  gap: 1.5rem;
-  flex: 1 1 0%;
-}
-
 .logo-card {
   width: fit-content;
   height: 1.25rem;
@@ -51,7 +43,7 @@
 }
 
 .country-logo {
-  margin-right: 0.5rem;
+  /* margin-right: 0.5rem; */
   width: 1.5rem;
   height: 1.5rem;
 }
@@ -135,6 +127,8 @@
 
 .button-card-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .social-store-tabsize {
@@ -151,6 +145,18 @@
   gap: 1rem;
   flex-direction: column-reverse;
 }
+
+.footer-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  width: 292px;
+}
+
+/* .footer-base-sub-container {
+  display: flex;
+} */
 
 .app-store-card-container-1 {
   display: none;
