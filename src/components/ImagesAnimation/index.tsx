@@ -1,12 +1,32 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import './styles.css';
 
-import animationData from '../../data/animation.json';
+import animationMobileData from '../../data/animationmobile.json';
+import animationTabData from '../../data/animationTab.json';
 import { AnimationProps } from '../../types';
 
 const ImagesAnimation: React.FC = () => {
-  const images = animationData as AnimationProps[];
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const isCurrentMobile =
+        window.innerWidth >= 320 && window.innerWidth <= 425;
+      setIsMobile(isCurrentMobile);
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const images = isMobile
+    ? (animationMobileData as AnimationProps[])
+    : (animationTabData as AnimationProps[]);
 
   return (
     <div className="image-gallery-card">
@@ -16,11 +36,15 @@ const ImagesAnimation: React.FC = () => {
             <img
               src={item.imageUrl}
               alt={`Image ID: ${item.id}`}
-              className="gallery-item"
+              className="gallery-item-1"
+            />
+            <img
+              src={item.imageUrl}
+              alt={`Image ID: ${item.id}`}
+              className="gallery-item-2"
             />
           </div>
         ))}
-
         {images.map(item => (
           <div
             key={`clone-${item.id}`}
