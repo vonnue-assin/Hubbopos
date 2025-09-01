@@ -48,7 +48,7 @@ const InfiniteScroll: React.FC<InfiniteScrolProps> = ({ data }) => {
     }px, 0, 0)`;
   }, [index, transition, cardVisibleWidth]);
 
-  // Handle infinite loop snapping
+  
   useEffect(() => {
     if (index === 0) {
       setTimeout(() => {

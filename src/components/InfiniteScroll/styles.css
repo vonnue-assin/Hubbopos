@@ -20,7 +20,6 @@
   display: flex;
   overflow: hidden;
   width: 100%;
-  /* margin-left: -88px; */
 }
 
 .swiper-wrapper {
@@ -70,7 +69,6 @@
   font-family: 'font1';
   margin: 0;
   text-align: start;
-
   display: block;
   overflow: hidden;
   white-space: normal;
@@ -157,10 +155,10 @@
   padding: 0px;
 }
 
+
 @media (max-width: 767px) {
   .card-container {
     flex-direction: column;
-
     max-width: 100%;
   }
 
@@ -181,61 +179,103 @@
   }
 }
 
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .card-container {
-    flex-direction: column;
-    /* max-width: 100%; */
+  .scroll-peek-wrapper {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
   }
 
-  .scroll-peek-wrapper {
-    overflow: visible;
-    /* padding-right: 50px; */
+  .image-card-wrapper {
+    width: calc(646px + 60px);
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .card-container {
+    flex-direction: column;
+    max-width: 646px;
+    margin-right: 22px;
   }
 
   .comment {
     font-size: 24px;
     max-height: none;
-    max-width: 556px;
-  }
-
-  .clients-image {
-    max-width: 295px;
-    width: 100%;
-    height: auto;
-  }
-
-  .content-container {
-    padding: 0 1rem;
-    gap: 1.5rem;
+    max-width: 100%;
   }
 
   .arrow-button {
-    width: 647px;
+    width: calc(646px + 60px);
+    margin: 2rem auto 0;
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .scroll-peek-wrapper {
-    overflow: visible;
-    /* padding-right: 60px; */
-  }
 
+@media screen and (width: 1024px) {
   .card-container {
     flex-direction: row;
     max-width: 646px;
+    margin: 0 auto;
+  }
+
+  .image-card-wrapper {
+    width: calc(646px + 60px);
+    margin: 0 auto;
+    overflow: hidden;
   }
 
   .comment {
     font-size: 1.5rem;
-    max-height: calc(1.6em * 3);
+    line-height: 1.6;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .arrow-button {
+    width: calc(646px + 60px);
+    margin: 2rem auto 0;
   }
 }
 
+
+@media screen and (min-width: 1025px) {
+  .card-container {
+    flex-direction: row;
+    max-width: 646px;
+    margin: 0 auto;
+  }
+
+  .comment {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    max-height: none;
+    overflow: visible;
+    display: block;
+  }
+
+  .arrow-button {
+    width: 800px;
+    margin: 2rem auto 0;
+  }
+
+  .image-card-wrapper {
+    width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .scroll-peek-wrapper {
+    justify-content: center;
+  }
+}
+
+/* Large screens (1440px+) */
 @media screen and (min-width: 1440px) {
   .scroll-peek-wrapper {
     overflow: hidden;
-    padding-right: 0;
-    margin-right: 0;
     display: flex;
     justify-content: center;
   }
@@ -258,6 +298,8 @@
     line-height: 30px;
     letter-spacing: -0.4px;
     font-weight: 600;
+    max-height: none;
+    overflow: visible;
   }
 
   .clients-image {
@@ -272,6 +314,7 @@
 
   .arrow-button {
     width: 1600px;
+    margin: 2rem auto 0;
   }
 
   .content-container {
