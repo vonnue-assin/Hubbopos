@@ -17,30 +17,32 @@ export const Home: React.FC = () => {
 
   return (
     <div className="main-container">
-      <p className="text-heading">Tailored Solutions For Your Business</p>
-      <div className="container">
-        {accordionData.map((section, index) => (
-          <div className="accordion-section-wrapper" key={index}>
-            <Button
-              onClick={() => handleAccordionToggle(index)}
-              className={
-                openAccordionIndex === index ? 'button active' : 'button'
-              }
-            >
-              <p className="button-name">
-                {section.buttonLabel}
-                <img
-                  src={ArrowButton}
-                  alt="arrowButton"
-                  className={`button-arrow-icon ${
-                    openAccordionIndex === index ? 'rotate' : ''
-                  }`}
-                />
-              </p>
-            </Button>
-            {openAccordionIndex === index && <Accordion data={[section]} />}
-          </div>
-        ))}
+      <div className='main-sub-container'>
+        <p className="text-heading">Tailored Solutions For Your Business</p>
+        <div className="container">
+          {accordionData.map((section, index) => (
+            <div className="accordion-section-wrapper" key={index}>
+              <Button
+                onClick={() => handleAccordionToggle(index)}
+                className={
+                  openAccordionIndex === index ? 'button active' : 'button'
+                }
+              >
+                <p className="button-name">
+                  {section.buttonLabel}
+                  <img
+                    src={ArrowButton}
+                    alt="arrowButton"
+                    className={`button-arrow-icon ${
+                      openAccordionIndex === index ? 'rotate' : ''
+                    }`}
+                  />
+                </p>
+              </Button>
+              {openAccordionIndex === index && <Accordion data={[section]} />}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

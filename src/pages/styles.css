@@ -1,13 +1,14 @@
 .text-heading {
-  font-size: 32px;
+  font-size: 29px;
   line-height: 40px;
   letter-spacing: 0.64px;
   font-weight: 600;
   font-family: 'font2';
   text-align: center;
+  margin: 0px;
 }
 .container {
-  padding: 3.5rem 1.5rem;
+  /* padding: 3.5rem 1.5rem; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,7 +31,7 @@
 
 .button {
   background-color: #fff5db;
-  color: black;
+  color: #321800;
   border: none;
   padding: 0.5rem 1.5rem;
   cursor: pointer;
@@ -42,6 +43,10 @@
   width: 100%;
   min-width: 140px;
   flex-shrink: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .button.active {
@@ -58,6 +63,9 @@
   width: 100%;
   gap: 0.5rem;
   font-weight: 500;
+  margin: 0px;
+  height: 45px;
+  width: 240px;
 }
 
 .button-arrow-icon {
@@ -93,7 +101,6 @@
 .accordion-item {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
 }
 
 .image {
@@ -106,8 +113,29 @@
   font-size: 1.5rem;
   font-weight: 600;
   font-family: 'font2';
+  margin: 0px;
 }
 
+.main-container {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.main-sub-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button.active {
+  color: #fff;
+}
 
 @media screen and (max-width: 769px) {
   .accordion-button-row {
