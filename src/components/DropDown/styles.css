@@ -3,13 +3,9 @@
   font-family: inherit;
 }
 
-.dropdown-container-sub {
-  display: flex;
-}
-
 .dropdown-toggle {
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
+  /* margin-left: 0.25rem;
+  margin-right: 0.25rem; */
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.1px;
@@ -21,11 +17,6 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-}
-
-.arrow {
-  margin-left: 0.5rem;
-  transition: transform 0.2s ease-in-out;
 }
 
 .arrow.open {
@@ -82,11 +73,6 @@
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   padding: 1rem;
-}
-
-.dropdown-language .dropdown-toggle {
-  font-size: 14px;
-  font-weight: 600;
 }
 
 .dropdown-language .dropdown-menu {

@@ -75,6 +75,8 @@
   border: none;
   align-items: center;
   justify-content: flex-end;
+  margin-right: -7px;
+  gap: 2px;
 }
 
 .feature-text {
@@ -97,7 +99,7 @@
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   color: #fff;
-  margin-top: 9px;
+  margin: 0px;
 }
 
 .solutions-text {
@@ -130,6 +132,16 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.language-box {
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown-toggle {
+  margin-left: 0.10rem;
+  padding: 0px;
 }
 
 @media screen and (min-width: 1024px) {

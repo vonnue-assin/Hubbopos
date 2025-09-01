@@ -26,7 +26,10 @@
   height: 1031px;
   margin-left: -182px;
   margin-bottom: -546px;
-  border-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border-top-right-radius: 9999px;
+  border-top-left-radius: 9999px;
   max-width: 655px;
   padding-bottom: 104px;
 }
@@ -48,21 +51,20 @@
   color: #472200;
   text-transform: capitalize;
   margin: 0;
-  width: 592px;
-  margin-top: 32px;
+  width: 591px;
 }
 
 .rounded-component-card-paragraph {
-  text-align: left;
   font-size: 18px;
   line-height: 28px;
   letter-spacing: -0.1px;
   font-weight: 500;
   color: #472200;
-  font-family: 'font2';
+  font-family: 'font1';
   margin-top: 1rem;
   margin-bottom: 3rem;
-  width: 600px;
+  width: 597px;
+  text-align: start;
 }
 
 .posMachine {
@@ -91,7 +93,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  width: 100%;
+  max-width: 320px;
+  font-family: 'font1';
 }
 
 .grow-bussiness-container-main-footer {
