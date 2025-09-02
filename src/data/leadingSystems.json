@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "imageUrl": "https://assets.grab.com/wp-content/uploads/sites/42/2024/06/04102432/eat.png",
+    "Heading": "Update your menu with single",
+    "span": "click",
+    "description": "Just one click to update your menu across both in-store and food delivery platforms."
+  },
+  {
+    "id": 2,
+    "imageUrl": "https://assets.grab.com/wp-content/uploads/sites/42/2024/06/04102551/people.png",
+    "Heading": "Slash labor costs",
+    "span": " by up to 35%",
+    "description": "Reduce manual errors and the need for staff support with enhanced automation."
+  },
+  {
+    "id": 3,
+    "imageUrl": "https://assets.grab.com/wp-content/uploads/sites/42/2024/06/04102449/growth.png",
+    "Heading": "See up to 49% increase in average",
+    "span": "ticket sizes",
+    "description": "Drive up basket ticket sizes with self-service contactless ordering"
+  }
+]
