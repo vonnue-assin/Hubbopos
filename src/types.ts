@@ -1,19 +1,15 @@
 export type AccordionContent = {
   heading: string;
   paragraph: string;
-  Option1?: string;
-  Option2?: string;
-  Option3?: string;
-  Option4?: string;
-  Option5?: string;
-  Option6?: string;
+  features: string[];
   link: string;
 };
 
 export type AccordionDataItem = {
-  buttonLabel: string;
   id: string;
-  image?: string;
+  buttonLabel: string;
+  image1?: string;
+  image2?: string;
   content: AccordionContent;
 };
 
@@ -24,11 +20,12 @@ export type AccordionProps = {
 export type TabData = {
   id: string;
   buttonLabel: string;
-  image: string;
+  image1: string;
+  image2: string;
   content: {
     heading: string;
     paragraph: string;
-    [key: string]: string;
+    features: string[];
     link: string;
   };
 };

@@ -1,18 +1,29 @@
-import React, { useState } from 'react';
-import Button from '../components/Button';
-import Accordion from '../components/Accordion';
-import accordionData from '../data/Accordion.json';
+import React, { useEffect, useState } from 'react';
+
 import ArrowButton from '../assets/svg/dropDownArrow.svg';
+import Accordion from '../components/Accordion';
+import Button from '../components/Button';
+import Tabs from '../components/Tab';
+import accordionData from '../data/Accordion.json';
 
 import './styles.css';
 import Header from '../components/Header';
 import GrowBussiness from '../components/GrowBussiness';
 import LeadingSystems from '../components/LeadingSystems';
 
-export const Home = () => {
+export const Home: React.FC = () => {
   const [openAccordionIndex, setOpenAccordionIndex] = useState<number | null>(
     null,
   );
+  const [isMobileView, setIsMobileView] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth < 768);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const handleAccordionToggle = (index: number) => {
     setOpenAccordionIndex(prevIndex => (prevIndex === index ? null : index));
@@ -24,8 +35,8 @@ export const Home = () => {
       <GrowBussiness />
       <LeadingSystems />
       <div className="main-container">
-        <div className="main-sub-container">
-          <p className="text-heading">Tailored Solutions For Your Business</p>
+        <p className="text-heading">Tailored Solutions For Your Business</p>
+        {isMobileView ? (
           <div className="container">
             {accordionData.map((section, index) => (
               <div className="accordion-section-wrapper" key={index}>
@@ -50,8 +61,9 @@ export const Home = () => {
               </div>
             ))}
           </div>
-          <div></div>
-        </div>
+        ) : (
+          <Tabs tabsData={accordionData} />
+        )}
       </div>
     </div>
   );

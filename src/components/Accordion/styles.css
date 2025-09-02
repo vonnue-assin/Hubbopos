@@ -38,7 +38,7 @@
   margin-bottom: 2rem;
 }
 
-.options::before {
+.features::before {
   content: url('../../assets/svg/check-mark.svg');
   padding-top: 0.125rem;
 }
@@ -53,7 +53,7 @@
   text-align: start;
 }
 
-.options {
+.features {
   text-transform: capitalize;
   display: flex;
   gap: 0.75rem;
@@ -70,6 +70,9 @@
   line-height: 24px;
 }
 
+.image2 {
+  display: none;
+}
 @media screen and (max-width: 768px) {
 
 .accordion-container {
@@ -78,111 +81,121 @@
   gap: 2rem;
   width: 100%;
 }
+  .accordion-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
 
-.accordion-item {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
-  width: 100%;
+  .accordion-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    width: 100%;
+  }
+
+  .accordion-toggle {
+    background-color: #fff5db;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 16px;
+    font-family: 'font1';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .accordion-label {
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .arrow-icon {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+
+  .arrow-icon.rotate {
+    transform: rotate(180deg);
+  }
+
+  .image {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    border-radius: 0.5rem;
+    /* padding-top: 5rem; */
+  }
+
+  .heading {
+    color: #321800;
+    text-transform: capitalize;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.96px;
+    font-weight: 600;
+    font-family: 'font2';
+    text-align: start;
+  }
+
+  .paragraph {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    color: #846b54;
+    font-family: 'font1';
+    font-weight: 500;
+    margin: 0;
+    text-align: justify;
+    margin-bottom: 1rem;
+  }
+
+  .options-container {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    row-gap: 1.5rem;
+    column-gap: 2rem;
+    text-align: start;
+  }
+
+  .features {
+    text-transform: capitalize;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    font-family: 'font1';
+    position: relative;
+  }
+
+  .features::before {
+    content: url('../../assets/svg/check-mark.svg');
+    padding-top: 0.125rem;
+  }
+
+  .learn-more {
+    border: 2px solid #321800;
+    border-radius: 1rem;
+    font-size: 16px;
+    color: #472200;
+    letter-spacing: -1px;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 12px 40px;
+    margin-top: 40px;
+  }
+  .image2 {
+    display: none;
+  }
 }
 
-.accordion-toggle {
-  background-color: #fff5db;
-  padding: 0.75rem 1.25rem;
-  border: none;
-  border-radius: 1rem;
-  font-size: 16px;
-  font-family: 'font1';
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  width: 100%;
-  transition: all 0.2s ease-in-out;
-}
-
-.accordion-label {
-  font-weight: 600;
-  font-size: 16px;
-}
-
-.arrow-icon {
-  display: inline-block;
-  transition: transform 0.3s ease;
-}
-
-.arrow-icon.rotate {
-  transform: rotate(180deg);
-}
-
-.image {
-  max-width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 3;
-  object-fit: contain;
-  border-radius: 0.5rem;
-  padding-top: 5rem;
-}
-
-.heading {
-  color: #321800;
-  text-transform: capitalize;
-  font-size: 24px;
-  line-height: 32px;
-  letter-spacing: -0.96px;
-  font-weight: 600;
-  font-family: 'font2';
-  text-align: start;
-}
-
-.paragraph {
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.1px;
-  color: #846b54;
-  font-family: 'font1';
-  font-weight: 500;
-  margin: 0;
-  text-align: justify;
-  margin-bottom: 1rem;
-}
-
-.options-container {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  row-gap: 1.5rem;
-  column-gap: 2rem;
-  text-align: start;
-}
-
-.options {
-  text-transform: capitalize;
-  display: flex;
-  align-items: flex-start;
-  gap: 0.75rem;
-  font-family: 'font1';
-  position: relative;
-}
-
-.options::before {
-  content: url('../../assets/svg/check-mark.svg');
-  padding-top: 0.125rem;
-}
-
-.learn-more {
-  border: 2px solid #321800;
-  border-radius: 1rem;
-  font-size: 16px;
-  color: #472200;
-  letter-spacing: -1px;
-  font-weight: 600;
-  line-height: 24px;
-  padding: 12px 40px;
-  margin-top: 40px;
-}
-}
 @media screen and (max-width: 768px) {
   .accordion-content {
     padding: 0.75rem;
@@ -197,5 +210,9 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
+  }
+
+  .image2 {
+    display: none;
   }
 }
