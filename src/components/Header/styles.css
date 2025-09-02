@@ -1,0 +1,249 @@
+.header-main-container {
+  position: fixed;
+  width: 100%;
+  z-index: 60;
+  top: 0;
+}
+
+.header-main-container.scrolled {
+  background-color: #fff;
+  color: #472200;
+}
+
+.header-main-container.scrolled .login {
+  color: #472200;
+}
+
+.header-main-container.scrolled .dropdown-toggle {
+  color: #472200;
+}
+
+.header-main-container.scrolled .menuIconSvg {
+  color: #472200;
+}
+
+.header-main-container.scrolled .get-started {
+  color: #fff;
+}
+
+.header-main-container.scrolled .solutions-text {
+  color: #472200;
+}
+
+.header-main-container.scrolled .hubbo-need {
+  color: #472200;
+}
+.solutions-menu-container {
+  display: none;
+}
+
+.header-sub-container {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+
+.menuIcon {
+  border: none;
+  background-color: transparent;
+  padding: 0px 8px;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.languages {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.5rem;
+  border: none;
+  background-color: transparent;
+  justify-content: space-between;
+}
+
+.language-container {
+  display: flex;
+  border: none;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: -7px;
+  gap: 2px;
+}
+
+.feature-text {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+  font-weight: 500;
+  font-family: 'font1';
+  color: #fff;
+}
+
+.login {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+  font-weight: 500;
+  font-family: 'font1';
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  color: #fff;
+  margin: 0px;
+}
+
+.solutions-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.get-started {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+  font-weight: 600;
+  border: none;
+  font-family: 'font1';
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: #472200;
+}
+
+.arrow-downwards {
+  display: block;
+  vertical-align: middle;
+}
+
+.header-component {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.language-box {
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown-toggle {
+  margin-left: 0.1rem;
+  padding: 0px;
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-us {
+    display: none;
+  }
+
+  .solutions-menu-container {
+    display: inline;
+    margin-top: 6px;
+    display: flex;
+  }
+
+  .solutions {
+    background-color: transparent;
+    color: #fff;
+    display: flex;
+    align-items: center;
+  }
+
+  .why-hubbo {
+    display: none;
+  }
+
+  .language-box {
+    display: flex;
+    margin-top: 11px;
+  }
+
+  .menuIcon {
+    display: none;
+  }
+
+  .header-sub-container {
+    padding-left: 3.5rem;
+    padding-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .menuIcon {
+    display: none;
+  }
+
+  .solutions-menu-container {
+    display: inline block;
+    text-align: left;
+    padding-right: 6rem;
+    position: relative;
+    padding-left: 3rem;
+    white-space: nowrap;
+    display: flex;
+    color: #fff;
+  }
+
+  .solutions {
+    background-color: transparent;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+  }
+
+  .solutions-text {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    font-weight: 500;
+    font-family: 'font1';
+    text-transform: capitalize;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 24px 0px 8px;
+  }
+
+  .contact-us {
+    display: inline;
+    background-color: transparent;
+    color: #fff;
+  }
+
+  .why-hubbo {
+    display: inline;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    background-color: transparent;
+    color: #fff;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+  }
+
+  .language-box {
+    margin-top: 11px;
+  }
+
+  .header-main-container {
+    display: flex;
+    justify-content: center;
+  }
+}

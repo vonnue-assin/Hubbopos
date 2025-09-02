@@ -1,0 +1,175 @@
+.grow-bussiness-container-main {
+  background-image: url('../../assets/images/hero-banner-home-scaled.jpg');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  background-color: rgba(71, 34, 0, 0.47);
+  transition: background-color 0.2s linear;
+}
+
+.grow-bussiness-sub-container {
+  padding-bottom: 0;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.rounded-component {
+  background-color: #fbb501;
+  padding-top: 136px;
+  padding-right: 138px;
+  padding-left: 237px;
+  margin-top: 312px;
+  height: 1031px;
+  margin-left: -182px;
+  margin-bottom: -546px;
+  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+  border-top-right-radius: 9999px;
+  border-top-left-radius: 9999px;
+  max-width: 655px;
+  padding-bottom: 104px;
+}
+
+.rounded-component-card {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 1029px;
+}
+
+.rounded-component-card-heading {
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: -1.6px;
+  font-weight: 600;
+  text-align: left;
+  font-family: 'font2';
+  color: #472200;
+  text-transform: capitalize;
+  margin: 0;
+  width: 591px;
+}
+
+.rounded-component-card-paragraph {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.1px;
+  font-weight: 500;
+  color: #472200;
+  font-family: 'font1';
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  width: 597px;
+  text-align: start;
+}
+
+.posMachine {
+  width: 404px;
+  height: 282px;
+  position: absolute;
+  right: 0;
+  left: 307px;
+  bottom: 2rem;
+  max-width: 100%;
+}
+
+.FreeDemo {
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: capitalize;
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 320px;
+  font-family: 'font1';
+}
+
+.grow-bussiness-container-main-footer {
+  background-color: #ffff;
+  padding: 200px;
+  margin-top: 0px;
+}
+
+.language-box {
+  display: flex;
+}
+
+@media screen and (min-width: 1024px) {
+  .rounded-component {
+    margin-top: 198px;
+    width: 860px;
+    height: 860px;
+  }
+
+  .posMachine {
+    height: 304px;
+    left: 531px;
+    bottom: 0;
+  }
+
+  .rounded-component-card-paragraph {
+    width: 535px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .posMachine {
+    width: 506px;
+    height: 354px;
+    left: 710px;
+    bottom: -30px;
+  }
+
+  .rounded-component-card-heading {
+    font-size: 48px;
+    line-height: 58px;
+    letter-spacing: -1.92px;
+    font-weight: 600;
+  }
+
+  .rounded-component-card-paragraph {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.1px;
+    font-weight: 500;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .grow-bussiness-container-main-footer {
+    padding: 300px;
+  }
+
+  .rounded-component {
+    margin-top: 198px;
+    width: 997px;
+    height: 999px;
+    margin-left: 100px;
+  }
+
+  .posMachine {
+    width: 506px;
+    height: 354px;
+    left: 730px;
+    bottom: -30px;
+  }
+
+  .grow-bussiness-container-main {
+    /* height: 44vh; */
+    background-position: 50%;
+  }
+}
