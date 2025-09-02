@@ -10,6 +10,9 @@ import './styles.css';
 import Header from '../components/Header';
 import GrowBussiness from '../components/GrowBussiness';
 import LeadingSystems from '../components/LeadingSystems';
+import { RestuarentOperations } from '../components/RestaurantOperations';
+import './styles.css';
+
 
 export const Home: React.FC = () => {
   const [openAccordionIndex, setOpenAccordionIndex] = useState<number | null>(
@@ -65,6 +68,7 @@ export const Home: React.FC = () => {
           <Tabs tabsData={accordionData} />
         )}
       </div>
+      <RestuarentOperations />
     </div>
   );
 };
