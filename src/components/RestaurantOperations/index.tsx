@@ -8,7 +8,7 @@ import './styles.css';
 
 export const RestuarentOperations = () => {
   return (
-    <div className="main-container">
+    <div className="main-containers">
       <div className="restuarent-operations-main-container">
         <div className="image-container">
           <div className="image-box-container">

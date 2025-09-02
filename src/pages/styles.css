@@ -189,7 +189,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .main-container {
+  /* .main-container {
     padding-bottom: 6rem;
     padding-right: 3rem;
     display: flex;
@@ -198,7 +198,7 @@
     align-items: center;
     padding-top: 6rem;
     gap: 4rem;
-  }
+  } */
 
   .accordion-section-wrapper {
     display: flex;
@@ -299,6 +299,19 @@
   font-size: 1.5rem;
   font-weight: 600;
   font-family: 'font2';
+}
+
+.leading-systems-conatainer {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.leading-systems {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 1 0%;
 }
 
 @media screen and (max-width: 769px) {

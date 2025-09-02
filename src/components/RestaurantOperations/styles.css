@@ -70,7 +70,7 @@
   border-bottom-left-radius: 1.5rem;
 }
 
-.main-container {
+.main-containers {
   background-color: #fffefb;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -102,7 +102,7 @@
   font-family: 'font1';
 }
 
-.button {
+/* .button {
   text-transform: capitalize;
   border: none;
   font-size: 18px;
@@ -126,7 +126,7 @@
   width: 100%;
   font-family: 'font1';
   white-space: nowrap;
-}
+} */
 
 @media screen and (min-width: 768px) {
   .image-box-card {
@@ -147,7 +147,7 @@
     font-weight: 600;
   }
 
-  .main-container {
+  .main-containers {
     padding-top: 5rem;
     padding-bottom: 5rem;
     padding-left: 3.5rem;
@@ -174,7 +174,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .main-container {
+  .main-containes {
     display: flex;
     flex-direction: row-reverse;
     min-height: 492px;
@@ -228,8 +228,8 @@
   }
 }
 
-@media screen and (min-width: 144px) {
-  .main-container {
+@media screen and (min-width: 1440px) {
+  .main-containers {
     padding-left: 6rem;
     padding-right: 6rem;
     padding-top: 6rem;
