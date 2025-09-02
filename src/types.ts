@@ -1,12 +1,36 @@
-export type AccordtionItem = {
-  id: number;
-  content: string;
+export type AccordionContent = {
+  heading: string;
+  paragraph: string;
+  Option1?: string;
+  Option2?: string;
+  Option3?: string;
+  Option4?: string;
+  Option5?: string;
+  Option6?: string;
+  link: string;
+};
+
+export type AccordionDataItem = {
+  buttonLabel: string;
+  id: string;
   image?: string;
-  header: string;
+  content: AccordionContent;
 };
 
 export type AccordionProps = {
-  data: AccordtionItem[];
+  data: AccordionDataItem[];
+};
+
+export type TabData = {
+  id: string;
+  buttonLabel: string;
+  image: string;
+  content: {
+    heading: string;
+    paragraph: string;
+    [key: string]: string;
+    link: string;
+  };
 };
 
 export type LeadingSystemsDetails = {

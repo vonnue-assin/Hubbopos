@@ -16,7 +16,7 @@ const Button: React.FC<ButtonProps> = ({
   onClick,
   type = 'button',
   className = '',
-  variant = 'primary | secondary',
+  variant = 'primary',
   children,
 }) => {
   const buttonClasses = `button ${variant}-button ${className}`;

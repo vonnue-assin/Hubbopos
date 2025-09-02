@@ -4,6 +4,16 @@
   border-radius: 1rem;
   border: none;
   background: transparent;
+  background-color: #472200;
+  transition: all 0.2s linear;
+  padding: 0.5rem 1rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: left;
 }
 
 .primary-button {
@@ -14,3 +24,23 @@
   background-color: #fbb501;
 }
 
+.button.active {
+  background-color: #005500;
+}
+
+.button-name {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-arrow-icon {
+  transition: transform 0.2s ease-in-out;
+  width: 16px;
+  height: 16px;
+}
+
+.button-arrow-icon.rotate {
+  transform: rotate(180deg);
+}
