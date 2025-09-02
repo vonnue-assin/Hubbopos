@@ -28,10 +28,11 @@
   border-radius: 1rem;
   display: flex;
   padding: 0.5rem;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
   justify-content: center;
   max-width: 100%;
   gap: 0.5rem;
-  padding: 0.5rem;
 }
 
 .tab-header {
@@ -124,7 +125,7 @@
   font-family: 'font1';
   font-weight: 500;
   margin: 0;
-  text-align: justify;
+  text-align: start;
 }
 
 .options-container {
@@ -170,6 +171,13 @@
 
 .content-link {
   margin: 0px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .tab-paragraph {
