@@ -24,7 +24,6 @@ const GrowBussiness = () => {
           <img src={PosMachine} alt="posMachine" className="posMachine" />
         </div>
       </div>
-      <div className="grow-bussiness-container-main-footer"></div>
     </div>
   );
 };
