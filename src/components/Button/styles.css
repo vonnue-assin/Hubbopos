@@ -44,3 +44,7 @@
 .button-arrow-icon.rotate {
   transform: rotate(180deg);
 }
+
+.primary-button {
+  background-color: #321800;
+}

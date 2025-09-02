@@ -11,6 +11,8 @@ import Header from '../components/Header';
 import GrowBussiness from '../components/GrowBussiness';
 import LeadingSystems from '../components/LeadingSystems';
 import { RestuarentOperations } from '../components/RestaurantOperations';
+import commentsJson from '../components/data/comments.json';
+import InfiniteScroll from '../components/InfiniteScroll';
 import './styles.css';
 
 
@@ -69,6 +71,12 @@ export const Home: React.FC = () => {
         )}
       </div>
       <RestuarentOperations />
+       <div className="main-section">
+      <p className="text-heading">
+        Why 1,600+ F & B Business Owners Love HUBBO POS
+      </p>
+      <InfiniteScroll data={commentsJson} />
+    </div>
     </div>
   );
 };

@@ -273,6 +273,7 @@
 }
 
 
+/* Large screens (1440px+) */
 @media screen and (min-width: 1440px) {
   .scroll-peek-wrapper {
     overflow: hidden;

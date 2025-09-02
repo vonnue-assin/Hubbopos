@@ -36,3 +36,21 @@ export type LeadingSystemsDetails = {
   Heading: string;
   description: string;
 };
+
+type Subheading = {
+  name: string;
+  owner: string;
+  logo: string;
+};
+
+export type ItemData = {
+  id: number;
+  image: string;
+  quoteSvg: string;
+  content: string;
+  subheading: Subheading;
+};
+
+export type InfiniteScrolProps = {
+  data: ItemData[];
+};
