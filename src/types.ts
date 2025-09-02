@@ -54,3 +54,7 @@ export type ItemData = {
 export type InfiniteScrolProps = {
   data: ItemData[];
 };
+export type AnimationProps = {
+  id: number;
+  imageUrl?: string;
+};

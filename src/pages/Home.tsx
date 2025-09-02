@@ -14,6 +14,7 @@ import { RestuarentOperations } from '../components/RestaurantOperations';
 import commentsJson from '../components/data/comments.json';
 import InfiniteScroll from '../components/InfiniteScroll';
 import './styles.css';
+import PoweringBusiness from '../components/PoweringBussiness';
 
 
 export const Home: React.FC = () => {
@@ -77,6 +78,7 @@ export const Home: React.FC = () => {
       </p>
       <InfiniteScroll data={commentsJson} />
     </div>
+        <PoweringBusiness />
     </div>
   );
 };
