@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { TabData } from '../../types';
+import { TabData } from '../../types/types';
 import Button from '../Button';
 
 import './styles.css';
@@ -47,7 +47,7 @@ const Tabs: React.FC<TabsProps> = ({ tabsData }) => {
               </div>
 
               <div className="options-main-container">
-                <div className="content-container">
+                <div className="content-containers">
                   <h2 className="header">{currentTab.content.heading}</h2>
                   <p className="tab-paragraph">
                     {currentTab.content.paragraph}

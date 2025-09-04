@@ -3,14 +3,15 @@
   padding-bottom: 5rem;
   overflow: hidden;
   background-color: #fbb501;
+  position: relative;
 }
 
 .freedemoImage-1 {
-  top: -1.5rem;
   left: 0px;
   position: absolute;
   max-width: 100%;
   height: auto;
+  top: -1.5rem;
 }
 
 .freedemoImage-2 {
@@ -18,7 +19,7 @@
   height: auto;
   position: absolute;
   right: -100px;
-  /* bottom: -30px;  */
+  /* bottom: -30px; */
 }
 
 .text-header {
@@ -29,9 +30,10 @@
   color: #321800;
   text-transform: capitalize;
   font-family: 'font2';
+  margin: 0px;
 }
 
-.content-card {
+.content-cards-main {
   text-align: center;
   max-width: 829px;
   margin-left: auto;

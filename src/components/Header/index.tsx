@@ -52,9 +52,9 @@ const Header = () => {
     <div className={`header-main-container ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-sub-container">
         <div className="header-component">
-          <Button className="menuIcon">
+          <div className="menuIcon">
             <MenuIcon color="#fff" className="menuIconSvg" />
-          </Button>
+          </div>
           <HubbobosLogo />
         </div>
         <div className="solutions-menu-container">
@@ -66,9 +66,9 @@ const Header = () => {
             isScrolled={isScrolled}
           />
 
-          <Button className="solutions">
+          <div className="solutions">
             <p className="solutions-text">Plans & Pricing</p>
-          </Button>
+          </div>
 
           <Dropdown
             label="Why Hubbo"
@@ -83,7 +83,7 @@ const Header = () => {
           </Button>
         </div>
         <div className="language-box">
-          <Button className="languages">
+          <div className="languages">
             <div className="language-container">
               {isScrolled ? <HubbobosLogoBrown /> : <GlobeLogo />}
               <span>
@@ -96,7 +96,7 @@ const Header = () => {
                 />
               </span>
             </div>
-          </Button>
+          </div>
           <p className="login">Log In</p>
           <div>
             <Button

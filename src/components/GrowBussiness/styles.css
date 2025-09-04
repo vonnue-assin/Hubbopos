@@ -5,7 +5,6 @@
   background-size: cover;
   width: 100%;
   position: relative;
-  height: 100vh;
   background-color: rgba(71, 34, 0, 0.47);
   transition: background-color 0.2s linear;
 }
@@ -20,17 +19,17 @@
 .rounded-component {
   background-color: #fbb501;
   padding-top: 136px;
-  padding-right: 138px;
+  padding-right: 793px;
   padding-left: 237px;
   margin-top: 312px;
   height: 1031px;
   margin-left: -182px;
-  margin-bottom: -546px;
+  margin-bottom: -319px;
   border-bottom-left-radius: 9999px;
   border-bottom-right-radius: 9999px;
   border-top-right-radius: 9999px;
   border-top-left-radius: 9999px;
-  max-width: 655px;
+  max-width: 1029px;
   padding-bottom: 104px;
 }
 
@@ -51,7 +50,7 @@
   color: #472200;
   text-transform: capitalize;
   margin: 0;
-  width: 591px;
+  width: 608px;
 }
 
 .rounded-component-card-paragraph {
@@ -63,7 +62,7 @@
   font-family: 'font1';
   margin-top: 1rem;
   margin-bottom: 3rem;
-  width: 597px;
+  width: 608px;
   text-align: start;
 }
 

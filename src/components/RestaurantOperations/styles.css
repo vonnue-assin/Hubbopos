@@ -40,9 +40,24 @@
   gap: 0.25rem;
   align-items: center;
   position: absolute;
-  top: 145px;
   justify-content: center;
-  margin-left: 60px;
+}
+
+.get-started-button {
+  padding-top: 18px;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-bottom: 18px;
+  color: #fff;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  font-weight: 600;
+  font-family: 'font1';
+  border-radius: 1rem;
+  max-width: 320px;
+  margin-top: 1.5rem;
+  background-color: #472200;
 }
 
 .learn-text {
@@ -130,13 +145,12 @@
 
 @media screen and (min-width: 768px) {
   .image-box-card {
-    top: 410px;
-    margin-left: 155px;
+    bottom: 0px;
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    gap: 1rem;
+    gap: 2rem;
   }
 
   .learn-text {

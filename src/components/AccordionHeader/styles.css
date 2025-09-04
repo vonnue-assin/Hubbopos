@@ -8,11 +8,22 @@
   display: flex;
   gap: 2.5rem;
   padding-bottom: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 
 .accordion-container {
   display: flex;
   gap: 2.5rem;
+}
+
+.features-container {
+  display: grid;
+  row-gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+  column-gap: 2rem;
 }
 
 .heading {
@@ -68,19 +79,105 @@
   letter-spacing: -1px;
   font-weight: 600;
   line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .image2 {
   display: none;
 }
-@media screen and (max-width: 768px) {
 
-.accordion-container {
+.features {
+  padding: 0px;
+}
+
+.main-container {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  width: 100%;
+  gap: 3rem;
 }
+
+.button-name .active {
+  color: #fff;
+}
+
+.paragraph {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: start;
+  letter-spacing: -0.1px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-main-container {
+    background-color: #1e0e00;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .features-container {
+    list-style-type: none;
+    padding: 0px;
+  }
+
+  .heading {
+    text-align: start;
+    color: #ad6500;
+    text-transform: capitalize;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.72px;
+    font-weight: 500;
+    font-family: 'font2';
+  }
+
+  .features {
+    color: #472200;
+    text-align: start;
+    list-style-type: none;
+    opacity: 0.7;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    font-family: 'font2';
+  }
+
+  .heading {
+    margin: 0px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .button-arrow-icon {
+    border: none;
+    background-color: transparent;
+  }
+
+  .accordion-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #492a00;
+    padding-bottom: 1rem;
+    padding-right: 12px;
+  }
+
+  .accordion-header.active {
+    border-bottom: none;
+  }
+
+  .accordion-section-wrapper {
+    text-align: start;
+  }
+
+  .accordion-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
   .accordion-container {
     display: flex;
     flex-direction: column;
@@ -152,8 +249,6 @@
     font-family: 'font1';
     font-weight: 500;
     margin: 0;
-    text-align: justify;
-    margin-bottom: 1rem;
   }
 
   .options-container {
@@ -215,4 +310,8 @@
   .image2 {
     display: none;
   }
+}
+
+.button-arrow-icon.rotate {
+  transform: rotate(180deg);
 }

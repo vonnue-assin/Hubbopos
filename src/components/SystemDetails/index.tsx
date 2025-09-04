@@ -23,8 +23,8 @@ const SystemDetails: React.FC<SystemDetailsProps> = ({ systemsData }) => {
               alt={systems.Heading}
               className="image-card"
             />
-            <div className="text-container">
-              <span className="text-heading">
+            <div className="text-containers">
+              <span className="text-headings">
                 {systems.Heading} <span>{systems.span}</span>
               </span>
 

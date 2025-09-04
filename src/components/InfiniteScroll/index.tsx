@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 
 import Button from '../Button';
 
-import { InfiniteScrolProps } from '../../types';
+import { InfiniteScrolProps } from '../../types/types';
 import { ReactComponent as LeftArrowIcon } from '../../assets/svg/leftArrow.svg';
 
 import './styles.css';
@@ -109,10 +109,10 @@ const InfiniteScroll: React.FC<InfiniteScrolProps> = ({ data }) => {
 
   
       <div className="arrow-button">
-        <Button onClick={prev}>
+        <Button onClick={prev} className='button-containers'>
           <LeftArrowIcon className="arrowIcon" />
         </Button>
-        <Button onClick={next}>
+        <Button onClick={next} className='button-containers'>
           <LeftArrowIcon className="arrowIcon rotateRight" />
         </Button>
       </div>

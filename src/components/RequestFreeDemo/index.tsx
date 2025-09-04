@@ -9,7 +9,7 @@ const RequestFreeDemo = () => {
       <div className="background-image">
         <RequestFreeDemoFirstImage className="freedemoImage-1" />
         <RequestFreeDemoSecondImage className="freedemoImage-2" />
-        <div className="content-card">
+        <div className="content-cards-main">
           <h1 className="text-header">All-in-One POS for your restaurant</h1>
           <h1 className="sub-header">
             Streamline your F＆B operations and supercharge your business growth

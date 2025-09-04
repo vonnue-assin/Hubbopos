@@ -19,7 +19,7 @@ const Button: React.FC<ButtonProps> = ({
   variant = 'primary',
   children,
 }) => {
-  const buttonClasses = `button ${variant}-button ${className}`;
+  const buttonClasses = `button-sets active ${variant}-button ${className}`;
 
   return (
     <button onClick={onClick} type={type} className={buttonClasses}>

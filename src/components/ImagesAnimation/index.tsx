@@ -4,7 +4,7 @@ import './styles.css';
 
 import animationMobileData from '../../data/animationmobile.json';
 import animationTabData from '../../data/animationTab.json';
-import { AnimationProps } from '../../types';
+import { AnimationProps } from '../../types/types';
 
 const ImagesAnimation: React.FC = () => {
   const [isMobile, setIsMobile] = useState(false);

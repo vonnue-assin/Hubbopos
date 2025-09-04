@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { AccordionProps } from '../../types';
+import { AccordionProps } from '../../types/types';
 
 import './styles.css';
 

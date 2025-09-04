@@ -43,8 +43,9 @@
   padding-top: 2rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding-bottom: 2rem;
+  gap: 108px;
 }
 
 .menuIcon {
@@ -100,6 +101,7 @@
   padding-right: 1.5rem;
   color: #fff;
   margin: 0px;
+  width:120px
 }
 
 .solutions-text {
@@ -121,6 +123,7 @@
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   color: #472200;
+  width: 167px;
 }
 
 .arrow-downwards {
@@ -142,6 +145,9 @@
 .dropdown-toggle {
   margin-left: 0.1rem;
   padding: 0px;
+}
+.FreeDemo {
+  background-color: #472200;
 }
 
 @media screen and (min-width: 1024px) {

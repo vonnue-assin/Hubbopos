@@ -30,6 +30,23 @@
   will-change: transform;
 }
 
+.button-containers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  border-radius: 9999px;
+}
+
+.main-section {
+  padding-left: 3.5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
 .clients-image {
   aspect-ratio: 1 / 1;
   height: 295px;
@@ -121,7 +138,8 @@
 
 .logo {
   position: absolute;
-  right: -1rem;
+  right: 1rem;
+  top: 1.5rem;
 }
 
 .custom-button {
@@ -150,12 +168,6 @@
   transform: rotate(180deg);
 }
 
-.button {
-  border-radius: 9999px;
-  padding: 0px;
-}
-
-
 @media (max-width: 767px) {
   .card-container {
     flex-direction: column;
@@ -178,7 +190,6 @@
     font-size: 1.25rem;
   }
 }
-
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .scroll-peek-wrapper {
@@ -211,7 +222,6 @@
   }
 }
 
-
 @media screen and (width: 1024px) {
   .card-container {
     flex-direction: row;
@@ -239,7 +249,6 @@
     margin: 2rem auto 0;
   }
 }
-
 
 @media screen and (min-width: 1025px) {
   .card-container {
@@ -271,7 +280,6 @@
     justify-content: center;
   }
 }
-
 
 /* Large screens (1440px+) */
 @media screen and (min-width: 1440px) {
