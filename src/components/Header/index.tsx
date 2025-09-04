@@ -78,7 +78,7 @@ const Header = () => {
             isScrolled={isScrolled}
           />
 
-          <Button className="contact-us">
+          <Button className="contact-us" isActive={false}>
             <p className="solutions-text">Contact Us</p>
           </Button>
         </div>
@@ -102,6 +102,7 @@ const Header = () => {
             <Button
               className="get-started"
               variant={isScrolled ? 'primary' : 'secondary'}
+              isActive={false}
             >
               Get Started
             </Button>

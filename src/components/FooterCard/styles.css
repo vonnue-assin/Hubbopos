@@ -16,7 +16,7 @@
 }
 
 .hubboposLogo {
-  height: 1.25rem;
+  width: fit-content;
 }
 
 .button-logo {
@@ -48,10 +48,10 @@
   height: 1.5rem;
 }
 
-.hubboposLogo {
+/* .hubboposLogo {
   height: 100%;
   width: auto;
-}
+} */
 
 .app-store-container {
   display: flex;

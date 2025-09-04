@@ -10,6 +10,7 @@ type ButtonProps = {
   className?: string;
   variant?: ButtonVariant;
   children: ReactNode;
+  isActive : boolean
 };
 
 const Button: React.FC<ButtonProps> = ({
@@ -18,8 +19,11 @@ const Button: React.FC<ButtonProps> = ({
   className = '',
   variant = 'primary',
   children,
+  isActive,
 }) => {
-  const buttonClasses = `button-sets active ${variant}-button ${className}`;
+  const buttonClasses = `${variant}-button ${className} ${
+    isActive ? 'active' : ''
+  }`;
 
   return (
     <button onClick={onClick} type={type} className={buttonClasses}>

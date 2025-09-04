@@ -4,7 +4,7 @@
   aspect-ratio: 4/3;
 }
 
-.accordion-item {
+.accordion-item-card {
   display: flex;
   gap: 2.5rem;
   padding-bottom: 5rem;
@@ -16,6 +16,8 @@
 .accordion-container {
   display: flex;
   gap: 2.5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .features-container {
@@ -185,11 +187,12 @@
     width: 100%;
   }
 
-  .accordion-item {
+  .accordion-item-card {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
     width: 100%;
+    background-color: #1e0e00;
   }
 
   .accordion-toggle {

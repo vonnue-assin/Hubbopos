@@ -24,7 +24,6 @@ const InfiniteScroll: React.FC<InfiniteScrolProps> = ({ data }) => {
   const prev = () => slideTo(index - 1);
   const next = () => slideTo(index + 1);
 
-  
   useEffect(() => {
     if (cardRef.current) {
       const { width } = cardRef.current.getBoundingClientRect();
@@ -35,7 +34,6 @@ const InfiniteScroll: React.FC<InfiniteScrolProps> = ({ data }) => {
     }
   }, []);
 
-  
   useEffect(() => {
     if (!wrapperRef.current || !cardVisibleWidth) return;
 
@@ -48,7 +46,6 @@ const InfiniteScroll: React.FC<InfiniteScrolProps> = ({ data }) => {
     }px, 0, 0)`;
   }, [index, transition, cardVisibleWidth]);
 
-  
   useEffect(() => {
     if (index === 0) {
       setTimeout(() => {
@@ -65,7 +62,6 @@ const InfiniteScroll: React.FC<InfiniteScrolProps> = ({ data }) => {
 
   return (
     <div className="main-card">
-    
       <div className="scroll-peek-wrapper">
         <div className="image-card-wrapper">
           <div className="swiper-wrapper" ref={wrapperRef}>
@@ -107,12 +103,11 @@ const InfiniteScroll: React.FC<InfiniteScrolProps> = ({ data }) => {
         </div>
       </div>
 
-  
       <div className="arrow-button">
-        <Button onClick={prev} className='button-containers'>
+        <Button onClick={prev} className="button-containers" isActive={false}>
           <LeftArrowIcon className="arrowIcon" />
         </Button>
-        <Button onClick={next} className='button-containers'>
+        <Button onClick={next} className="button-containers" isActive={false}>
           <LeftArrowIcon className="arrowIcon rotateRight" />
         </Button>
       </div>

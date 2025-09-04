@@ -91,7 +91,7 @@ export const FooterCard = () => {
               <div className="logo-card">
                 <HubboposLogo className="hubboposLogo" />
               </div>
-              <Button className="button-logo">
+              <Button className="button-logo" isActive={false}>
                 <div className="button-card">
                   <div className="button-card-container">
                     <CountryLogo className="country-logo" />

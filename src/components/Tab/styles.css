@@ -99,10 +99,6 @@
   display: none;
 }
 
-.content-container {
-  gap: 1rem;
-}
-
 .header {
   color: #321800;
   text-transform: capitalize;

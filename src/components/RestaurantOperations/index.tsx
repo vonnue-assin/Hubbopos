@@ -23,7 +23,7 @@ export const RestuarentOperations = () => {
       </div>
 
       <div className="text-container">
-        <h3 className="text-heading">
+        <h3 className="text-head-main">
           The Only Restaurant Operations Platform You'll Need
         </h3>
         <p className="text-content">

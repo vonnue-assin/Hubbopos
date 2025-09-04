@@ -6,23 +6,13 @@
   padding-bottom: 2rem;
 }
 
-.features-container {
+.features-container-footer {
   list-style-type: none;
   padding: 0px;
+  background-color: #1e0e00;
 }
 
-.heading {
-  text-align: start;
-  color: #ad6500;
-  text-transform: capitalize;
-  font-size: 18px;
-  line-height: 26px;
-  letter-spacing: -0.72px;
-  font-weight: 500;
-  font-family: 'font2';
-}
-
-.features {
+.features-card-footer {
   color: #fff5db;
   text-align: start;
   list-style-type: none;
@@ -32,12 +22,26 @@
   line-height: 24px;
   letter-spacing: -0.1px;
   font-family: 'font2';
+  background-color: #1e0e00;
 }
 
-.heading {
+.accordion-item-card-footer {
+  background-color: #1e0e00;
+  
+}
+
+.heading-footer {
+  text-align: start;
+  color: #ad6500;
+  text-transform: capitalize;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.72px;
+  font-weight: 500;
   margin: 0px;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  font-family: 'font2';
 }
 
 .button-arrow-icon {
@@ -48,9 +52,10 @@
 .accordion-header {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #492a00;
   padding-bottom: 1rem;
   padding-right: 12px;
+  background-color: #1e0e00;
+  align-items: center;
 }
 
 .accordion-header.active {
@@ -69,4 +74,16 @@
 
 .button-arrow-icon.rotate {
   transform: rotate(180deg);
+}
+
+@media screen and (min-width: 768px) {
+  .heading-footer {
+    margin: 0px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.72px;
+    font-weight: 500;
+  }
 }

@@ -35,9 +35,8 @@ export const Accordionpics: React.FC = () => {
             <div className="accordion-section-wrapper" key={index}>
               <Button
                 onClick={() => handleAccordionToggle(index)}
-                className={
-                  openAccordionIndex === index ? 'button active' : 'button'
-                }
+                isActive={openAccordionIndex === index}
+                className='buttonCard'
               >
                 <p className="button-name">
                   {section.buttonLabel}

@@ -7,10 +7,6 @@
   cursor: pointer;
 }
 
-.primary-button {
-  background-color: #472200;
-}
-
 .secondary-button {
   background-color: #fbb501;
 }
@@ -30,8 +26,4 @@
 
 .button-arrow-icon.rotate {
   transform: rotate(180deg);
-}
-
-.primary-button {
-  background-color: #321800;
 }

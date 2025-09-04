@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "buttonLabel": "Integration Partners",
+    "buttonLabel": "Integration partners",
     "image1": "https://assets.grab.com/wp-content/uploads/sites/42/2024/06/04110649/integration-partners-mobile.png",
     "image2": "https://assets.grab.com/wp-content/uploads/sites/42/2024/06/04110652/integration-partners.png",
     "content": {
@@ -17,7 +17,7 @@
   },
   {
     "id": "2",
-    "buttonLabel": "Omni-Channel",
+    "buttonLabel": "Omni-channel",
     "image1": "https://assets.grab.com/wp-content/uploads/sites/42/2024/06/04111548/omni-channel-small.png",
     "image2": "https://assets.grab.com/wp-content/uploads/sites/42/2024/06/04111542/omni-channel-large.png",
     "content": {
@@ -34,7 +34,7 @@
   },
   {
     "id": "3",
-    "buttonLabel": "Store Operations",
+    "buttonLabel": "Store operations",
     "image1": "https://assets.grab.com/wp-content/uploads/sites/42/2024/06/04112030/store-operations-small.png",
     "image2": "https://assets.grab.com/wp-content/uploads/sites/42/2024/06/04112024/store-operations-large.png",
     "content": {
@@ -53,7 +53,7 @@
   },
   {
     "id": "4",
-    "buttonLabel": "Customer Experience",
+    "buttonLabel": "Customer experience",
     "image1": "https://assets.grab.com/wp-content/uploads/sites/42/2024/06/04112558/customer-experience-small.png",
     "image2": "https://assets.grab.com/wp-content/uploads/sites/42/2024/06/04112530/customer-experience-large.png",
     "content": {

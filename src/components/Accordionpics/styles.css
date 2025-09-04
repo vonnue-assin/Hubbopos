@@ -23,19 +23,21 @@
   color: #321800;
 }
 
-.button .active {
+.button-name.active {
   background-color: #321800;
   color: #fff;
 }
 
-.button {
-  background-color: transparent;
-  color: #333;
+.buttonCard.active {
+  background-color: #321800;
+}
+:no-button.active {
+  background-color: #321800;
+  color: #fff;
 }
 
-.button.active {
-  background-color: white;
-  color: #000;
+.main-container {
+  padding-bottom: 0px;
 }
 
 .accordion-button-row {
@@ -52,9 +54,8 @@
   width: 100%;
 }
 
-.button {
+.button-name {
   background-color: #fff5db;
-  color: black;
   border: none;
   padding: 0.5rem 1.5rem;
   cursor: pointer;
@@ -68,9 +69,10 @@
   flex-shrink: 0;
 }
 
-.button.active {
-  background-color: #472200;
-  color: white;
+.buttonCard {
+  background-color: #fff5db;
+  border: none;
+  border-radius: 1rem;
 }
 
 .button-name {

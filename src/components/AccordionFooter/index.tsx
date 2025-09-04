@@ -10,16 +10,16 @@ const AccordionFooter: React.FC<AccordionProps> = ({
   onToggle,
 }) => {
   return (
-    <div className="accordion-container">
+    <div className="accordion-container-footer">
       {data.map((item, index) => (
-        <div className="accordion-section-wrapper" key={item.id}>
+        <div className="accordion-section-wrapper-footer" key={item.id}>
           <div
             onClick={() => onToggle(index)}
             className={`accordion-header ${
               openIndex === index ? 'active' : ''
             }`}
           >
-            <h3 className="heading">{item.content.heading}</h3>
+            <h3 className="heading-footer">{item.content.heading}</h3>
             <img
               src={ArrowIcon}
               alt="arrowButton"
@@ -30,7 +30,7 @@ const AccordionFooter: React.FC<AccordionProps> = ({
           </div>
 
           {openIndex === index && (
-            <div className="accordion-item">
+            <div className="accordion-item-card-footer">
               {item.image1 && (
                 <img
                   src={item.image1}
@@ -44,9 +44,9 @@ const AccordionFooter: React.FC<AccordionProps> = ({
               )}
 
               {item.content.features && item.content.features.length > 0 && (
-                <ul className="features-container">
+                <ul className="features-container-footer">
                   {item.content.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="features">
+                    <li key={featureIndex} className="features-card-footer">
                       {feature}
                     </li>
                   ))}
