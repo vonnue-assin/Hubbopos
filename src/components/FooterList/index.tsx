@@ -1,13 +1,11 @@
-import { NewRawJsonData, AccordionItem } from '../../types/types';
+import { AccordionItem, NewRawJsonData } from '../../types/footer';
 
-export const FooterList = (rawData: NewRawJsonData): AccordionItem[] => {
-  return rawData.map(item => {
-    return {
-      id: item.id,
-      content: {
-        heading: item.Heading,
-        features: item.features,
-      },
-    };
-  });
+export const FooterList = (data: NewRawJsonData): AccordionItem[] => {
+  return data.map(item => ({
+    id: Number(item.id),
+    content: {
+      heading: item.Heading,
+      features: item.features,
+    },
+  }));
 };

@@ -10,6 +10,13 @@
   list-style-type: none;
   padding: 0px;
   background-color: #1e0e00;
+  margin-top: 0px;
+}
+
+.accordion-container-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .features-card-footer {
@@ -27,7 +34,10 @@
 
 .accordion-item-card-footer {
   background-color: #1e0e00;
-  
+}
+
+.features-card-footer {
+  font-family: 'font2';
 }
 
 .heading-footer {

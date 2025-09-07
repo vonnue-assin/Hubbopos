@@ -40,6 +40,7 @@
   font-weight: 600;
   margin: 0px;
   font-family: 'font2';
+  text-transform: capitalize;
 }
 
 .background-image {
@@ -90,6 +91,7 @@
   line-height: 20px;
   letter-spacing: 0.3px;
   font-weight: 600;
+  font-family: 'font1';
   border-radius: 1rem;
 }
 

@@ -3,11 +3,13 @@ import { useState, useEffect } from 'react';
 import Accordion from '../../components/AccordionFooter';
 import { FooterList } from '../../components/FooterList';
 import FooterData from '../../data/footer.json';
+
 import { AccordionItem, NewRawJsonData } from '../../types/footer';
 
 import { ReactComponent as HubboposLogo } from '../../assets/svg/hubboposlogo.svg';
 import { ReactComponent as CountryLogo } from '../../assets/svg/malaysia-flag.svg';
 import { ReactComponent as ArrowIcon } from '../../assets/svg/expandIcon.svg';
+
 import AppStore from '../../assets/images/app-store-sm.png';
 import GooglePlay from '../../assets/images/google-play-sm.png';
 import faceBookIcon from '../../assets/images/facebook-icon.png';
@@ -22,7 +24,6 @@ export const FooterCard = () => {
   const [openAccordionIndex, setOpenAccordionIndex] = useState<number | null>(
     null,
   );
-
   const [shouldShowAccordion, setShouldShowAccordion] = useState(
     window.innerWidth >= 320 && window.innerWidth <= 1024,
   );
@@ -33,6 +34,7 @@ export const FooterCard = () => {
         window.innerWidth >= 320 && window.innerWidth <= 1024,
       );
     };
+
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
@@ -53,12 +55,10 @@ export const FooterCard = () => {
         ) : (
           <div className="footer-cards-container">
             <div className="app-store-card-container-1">
-              <div className="app-store-card-container-1">
-                <div className="app-store-container">
-                  <div className="need-help">
-                    <p className="need-help-text">Need help? Reach us at</p>
-                    <p className="hello-link">hello.my@hubbopos.com</p>
-                  </div>
+              <div className="app-store-container">
+                <div className="need-help">
+                  <p className="need-help-text">Need help? Reach us at</p>
+                  <p className="hello-link">hello.my@hubbopos.com</p>
                 </div>
                 <div className="app-store-card">
                   <img src={AppStore} alt="AppStore" className="appstore" />
@@ -66,6 +66,7 @@ export const FooterCard = () => {
                 </div>
               </div>
             </div>
+
             <div className="footer-container">
               {accordionData.map(section => (
                 <div className="footer-card" key={section.id}>
@@ -96,7 +97,7 @@ export const FooterCard = () => {
                   <div className="button-card-container">
                     <CountryLogo className="country-logo" />
                     <p className="button-card-text">MY</p>
-                    <ArrowIcon style={{ padding: '0.5rem' }} />
+                    <ArrowIcon />
                   </div>
                 </div>
               </Button>
@@ -115,6 +116,7 @@ export const FooterCard = () => {
               className="image-social"
             />
           </div>
+
           <div className="app-store-card-container">
             <div className="app-store-container">
               <div className="need-help">
@@ -128,6 +130,7 @@ export const FooterCard = () => {
               <img src={GooglePlay} alt="googlePlay" className="appstore" />
             </div>
           </div>
+
           <div className="social-store">
             <img
               src={faceBookIcon}

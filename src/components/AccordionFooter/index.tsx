@@ -1,7 +1,7 @@
 import React from 'react';
 import { AccordionProps } from '../../types/footer';
 
-import ArrowIcon from '../../assets/svg/expandIcon.svg';
+import ArrowIcon from '../../assets/svg/expand-more-arrow-button.svg';
 import './styles.css';
 
 const AccordionFooter: React.FC<AccordionProps> = ({
@@ -22,8 +22,8 @@ const AccordionFooter: React.FC<AccordionProps> = ({
             <h3 className="heading-footer">{item.content.heading}</h3>
             <img
               src={ArrowIcon}
-              alt="arrowButton"
-              className={`button-arrow-icon ${
+              alt="Expand"
+              className={`button-arrow-icons  ${
                 openIndex === index ? 'rotate' : ''
               }`}
             />
@@ -51,6 +51,17 @@ const AccordionFooter: React.FC<AccordionProps> = ({
                     </li>
                   ))}
                 </ul>
+              )}
+
+              {item.content.link && (
+                <a
+                  href={item.content.link}
+                  className="footer-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {item.content.link}
+                </a>
               )}
             </div>
           )}

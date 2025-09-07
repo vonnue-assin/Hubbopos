@@ -18,12 +18,6 @@
   align-items: center;
 }
 
-.button-arrow-icon {
-  transition: transform 0.2s ease-in-out;
-  width: 16px;
-  height: 16px;
-}
-
 .button-arrow-icon.rotate {
   transform: rotate(180deg);
 }

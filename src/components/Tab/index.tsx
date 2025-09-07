@@ -23,6 +23,7 @@ const Tabs: React.FC<TabsProps> = ({ tabsData }) => {
                 key={tab.id}
                 className={`tab-header ${activeTab === tab.id ? 'active' : ''}`}
                 onClick={() => setActiveTab(tab.id)}
+                isActive={false}
               >
                 {tab.buttonLabel}
               </Button>
@@ -63,7 +64,7 @@ const Tabs: React.FC<TabsProps> = ({ tabsData }) => {
                 </ul>
 
                 <a href={currentTab.content.link} className="link-learn-more">
-                  <p className='content-link'>{currentTab.content.link}</p>
+                  <p className="content-link">{currentTab.content.link}</p>
                 </a>
               </div>
             </div>

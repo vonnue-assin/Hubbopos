@@ -86,12 +86,6 @@
   font-weight: 500;
 }
 
-.button-arrow-icon {
-  width: 16px;
-  height: 16px;
-  transition: transform 0.3s ease, filter 0.2s ease;
-  filter: invert(0);
-}
 
 .button.active .button-arrow-icon {
   filter: invert(1);

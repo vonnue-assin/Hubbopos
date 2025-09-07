@@ -192,6 +192,13 @@
   transform: rotate(180deg);
 }
 
+.text-heading-infinite-roll {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.64px;
+  font-weight: 600;
+}
+
 @media screen and (min-width: 768px) {
   .card-container {
     flex-direction: column;
