@@ -24,6 +24,15 @@
   margin: 0;
 }
 
+.content-card-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.leading-systems-container {
+  position: relative;
+}
+
 .leading-systems-heading-3 {
   text-align: start;
   font-size: 18px;
@@ -75,7 +84,7 @@
   width: 100%;
   max-width: 100%;
   height: auto;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 .content-card {

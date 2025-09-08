@@ -1,56 +1,35 @@
-.grow-bussiness-container-main {
-  background-image: url('../../assets/images/hero-banner-home-scaled.jpg');
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: cover;
-  width: 100%;
-  position: relative;
-  background-color: rgba(71, 34, 0, 0.47);
-  transition: background-color 0.2s linear;
+.rounded-component {
+  background-color: #fbb501;
+  padding-top: 2rem;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 104px;
+  border-bottom-left-radius: 33% 17%;
+}
+
+.posMachine {
+  height: 229px;
+  width: 324px;
+  position: absolute;
+  right: -2.75rem;
+  bottom: -2.25rem;
 }
 
 .grow-bussiness-sub-container {
-  padding-bottom: 0;
-  overflow: hidden;
-  width: 100%;
-  position: relative;
-}
-
-.rounded-component {
-  background-color: #fbb501;
-  padding-top: 136px;
-  padding-right: 793px;
-  padding-left: 237px;
-  margin-top: 312px;
-  height: 1031px;
-  margin-left: -182px;
-  margin-bottom: -319px;
-  border-bottom-left-radius: 9999px;
-  border-bottom-right-radius: 9999px;
-  border-top-right-radius: 9999px;
-  border-top-left-radius: 9999px;
-  max-width: 1029px;
-  padding-bottom: 104px;
-}
-
-.rounded-component-card {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  width: 1029px;
+  padding-bottom: 238px;
 }
 
 .rounded-component-card-heading {
-  font-size: 40px;
-  line-height: 52px;
-  letter-spacing: -1.6px;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.64px;
   font-weight: 600;
-  text-align: left;
   font-family: 'font2';
   color: #472200;
+  padding-top: 5.5rem;
+  text-align: center;
   text-transform: capitalize;
-  margin: 0;
-  width: 608px;
+  margin: 0px;
 }
 
 .rounded-component-card-paragraph {
@@ -60,20 +39,95 @@
   font-weight: 500;
   color: #472200;
   font-family: 'font1';
+  text-align: center;
+  margin: 0;
   margin-top: 1rem;
   margin-bottom: 3rem;
-  width: 608px;
-  text-align: start;
 }
 
-.posMachine {
-  width: 404px;
-  height: 282px;
-  position: absolute;
-  right: 0;
-  left: 307px;
-  bottom: 2rem;
-  max-width: 100%;
+.rounded-component-card {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .rounded-component {
+    background-color: #fbb501;
+    padding-top: 136px;
+    padding-right: 793px;
+    padding-left: 237px;
+    margin-top: 312px;
+    height: 1031px;
+    margin-left: -182px;
+    margin-bottom: -319px;
+    border-bottom-left-radius: 9999px;
+    border-bottom-right-radius: 9999px;
+    border-top-right-radius: 9999px;
+    border-top-left-radius: 9999px;
+    max-width: 1029px;
+    padding-bottom: 104px;
+  }
+
+  .posMachine {
+    width: 404px;
+    height: 282px;
+    position: absolute;
+    right: 0;
+    left: 307px;
+    bottom: 2rem;
+    max-width: 100%;
+  }
+
+  .rounded-component-card-heading {
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: -1.6px;
+    font-weight: 600;
+    text-align: left;
+    font-family: 'font2';
+    color: #472200;
+    text-transform: capitalize;
+    margin: 0;
+    width: 608px;
+  }
+
+  .rounded-component-card-paragraph {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.1px;
+    font-weight: 500;
+    color: #472200;
+    font-family: 'font1';
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    width: 608px;
+    text-align: start;
+  }
+
+  .rounded-component-card {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 1029px;
+  }
+
+  .grow-bussiness-sub-container {
+    padding-bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+}
+
+.grow-bussiness-container-main {
+  background-image: url('../../assets/images/hero-banner-home-scaled.jpg');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  background-color: rgba(71, 34, 0, 0.47);
+  transition: background-color 0.2s linear;
 }
 
 .FreeDemo {
@@ -95,6 +149,10 @@
   width: 100%;
   max-width: 320px;
   font-family: 'font1';
+}
+
+.FreeDemo {
+  height: 56px;
 }
 
 .grow-bussiness-container-main-footer {

@@ -33,6 +33,13 @@
   color: #472200;
 }
 
+.image-box-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .text-header {
   font-size: 24px;
   line-height: 32px;

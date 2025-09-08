@@ -8,6 +8,8 @@ import { ReactComponent as HubbobosLogoBrown } from '../../assets/svg/globe-brow
 import { ReactComponent as GlobeLogo } from '../../assets/svg/globe-white.svg';
 import { ReactComponent as HubbobosLogo } from '../../assets/svg/hubboposlogo.svg';
 import { ReactComponent as MenuIcon } from '../../assets/svg/menuIcon.svg';
+import { ReactComponent as MenuIconBrown } from '../../assets/svg/menuBrown.svg';
+import { ReactComponent as HubboposWhite } from '../../assets/svg/hubboposWhite.svg';
 
 import './styles.css';
 
@@ -54,8 +56,13 @@ const Header = () => {
         <div className="header-component">
           <div className="menuIcon">
             <MenuIcon color="#fff" className="menuIconSvg" />
+            <MenuIcon className="menuIconBrown" />
           </div>
-          <HubbobosLogo />
+          {isScrolled ? (
+            <HubbobosLogo className="hubboposLogo-two" />
+          ) : (
+            <HubboposWhite className="hubboLogo-one" />
+          )}
         </div>
         <div className="solutions-menu-container">
           <Dropdown

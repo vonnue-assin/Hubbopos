@@ -38,12 +38,12 @@ export const Accordionpics: React.FC = () => {
                 isActive={openAccordionIndex === index}
                 className='buttonCard'
               >
-                <p className="button-name">
+                <p className="button-name-accordion">
                   {section.buttonLabel}
                   <img
                     src={ArrowButton}
                     alt="arrowButton"
-                    className={`button-arrow-icon ${
+                    className={`down-ward-arrow-icon ${
                       openAccordionIndex === index ? 'rotate' : ''
                     }`}
                   />

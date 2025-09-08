@@ -1,3 +1,10 @@
+.header-component {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .header-main-container {
   position: fixed;
   width: 100%;
@@ -39,14 +46,16 @@
 }
 
 .header-sub-container {
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
-  padding-top: 2rem;
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
-  padding-bottom: 2rem;
   gap: 108px;
+  --tw-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.24),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  --tw-shadow-colored: 0px 1px 2px 0px var(--tw-shadow-color),
+    0px 1px 3px 0px var(--tw-shadow-color);
+
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .menuIcon {
@@ -59,6 +68,10 @@
   display: flex;
   flex-direction: row;
 }
+
+/* .hubboLogo-one {
+  display: none;
+} */
 
 .languages {
   padding-top: 0.75rem;
@@ -102,7 +115,7 @@
   padding-right: 1.5rem;
   color: #fff;
   margin: 0px;
-  width:120px
+  width: 120px;
 }
 
 .solutions-text {
@@ -110,6 +123,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 200px;
 }
 
 .get-started {
@@ -132,15 +146,26 @@
   vertical-align: middle;
 }
 
+.menuIconSvg {
+  display: none;
+}
+
+.solutions-menu-container {
+  display: none;
+}
+
 .header-component {
   display: flex;
   flex-direction: row;
-  align-items: center;
 }
 
 .language-box {
   justify-content: center;
   align-items: center;
+}
+
+.contact-us {
+  border: none;
 }
 
 .dropdown-toggle {
@@ -149,6 +174,16 @@
 }
 .FreeDemo {
   background-color: #472200;
+}
+
+@media screen and (min-width: 768px) {
+  .hubboposLogo-two {
+    display: none;
+  }
+
+  .hubboLogo-one {
+    display: inline;
+  }
 }
 
 @media screen and (min-width: 1024px) {
