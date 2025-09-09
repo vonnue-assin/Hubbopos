@@ -57,62 +57,63 @@ const Header = () => {
           <div className="menuIcon">
             <MenuIcon color="#fff" className="menuIconSvg" />
             <MenuIcon className="menuIconBrown" />
-          </div>
-          {isScrolled ? (
-            <HubbobosLogo className="hubboposLogo-two" />
-          ) : (
-            <HubboposWhite className="hubboLogo-one" />
-          )}
-        </div>
-        <div className="solutions-menu-container">
-          <Dropdown
-            label="Solutions"
-            options={solutionsOptions}
-            onSelect={handleLanguageSelect}
-            className="solutions dropdown-solutions"
-            isScrolled={isScrolled}
-          />
-
-          <div className="solutions">
-            <p className="solutions-text">Plans & Pricing</p>
+            {isScrolled ? (
+              <HubbobosLogo className="hubboposLogo-yellow" />
+            ) : (
+              <HubboposWhite className="hubboLogo-one" />
+            )}
           </div>
 
-          <Dropdown
-            label="Why Hubbo"
-            options={WhyHubbo}
-            onSelect={handleLanguageSelect}
-            className="why-hubbo"
-            isScrolled={isScrolled}
-          />
+          <div className="solutions-menu-container">
+            <Dropdown
+              label="Solutions"
+              options={solutionsOptions}
+              onSelect={handleLanguageSelect}
+              className="solutions dropdown-solutions"
+              isScrolled={isScrolled}
+            />
 
-          <Button className="contact-us" isActive={false}>
-            <p className="solutions-text">Contact Us</p>
-          </Button>
-        </div>
-        <div className="language-box">
-          <div className="languages">
-            <div className="language-container">
-              {isScrolled ? <HubbobosLogoBrown /> : <GlobeLogo />}
-              <span>
-                <Dropdown
-                  label="EN"
-                  options={languages}
-                  onSelect={handleLanguageSelect}
-                  className="dropdown-language"
-                  isScrolled={isScrolled}
-                />
-              </span>
+            <div className="solutions">
+              <p className="solutions-text">Plans & Pricing</p>
             </div>
-          </div>
-          <p className="login">Log In</p>
-          <div>
-            <Button
-              className="get-started"
-              variant={isScrolled ? 'primary' : 'secondary'}
-              isActive={false}
-            >
-              Get Started
+
+            <Dropdown
+              label="Why Hubbo"
+              options={WhyHubbo}
+              onSelect={handleLanguageSelect}
+              className="why-hubbo"
+              isScrolled={isScrolled}
+            />
+
+            <Button className="contact-us" isActive={false}>
+              <p className="solutions-text">Contact Us</p>
             </Button>
+            <div className="language-box">
+              <div className="languages">
+                <div className="language-container">
+                  {isScrolled ? <HubbobosLogoBrown /> : <GlobeLogo />}
+                  <span>
+                    <Dropdown
+                      label="EN"
+                      options={languages}
+                      onSelect={handleLanguageSelect}
+                      className="dropdown-language"
+                      isScrolled={isScrolled}
+                    />
+                  </span>
+                </div>
+                <p className="login">Log In</p>
+                <div>
+                  <Button
+                    className="get-started"
+                    variant={isScrolled ? 'primary' : 'secondary'}
+                    isActive={false}
+                  >
+                    Get Started
+                  </Button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

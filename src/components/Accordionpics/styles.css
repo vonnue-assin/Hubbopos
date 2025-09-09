@@ -36,8 +36,19 @@
 }
 
 .buttonCard.active {
-  background-color: #321800;
+  background-color: #472200;
+}
+
+.buttonCard.active .button-name-accordion {
   color: #fff;
+}
+
+.buttonCard.active .down-ward-arrow-icon {
+  filter: brightness(0) invert(1);
+}
+
+.down-ward-arrow-icon {
+  transition: filter 0.3s ease;
 }
 
 .buttonCard {
@@ -48,7 +59,7 @@
   padding-bottom: 0.5rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  height:56px;
+  height: 56px;
 }
 
 .main-container {
@@ -109,6 +120,10 @@
   font-size: 1.5rem;
   font-weight: 600;
   font-family: 'font2';
+}
+
+.menuIconBrown {
+  margin-right: 8px;
 }
 
 @media screen and (max-width: 769px) {
